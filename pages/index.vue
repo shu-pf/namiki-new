@@ -19,7 +19,7 @@
         />
       </h1>
     </div>
-    <div class="container">
+    <div id="container">
       <section>
         <div>
           <div class="heading">
@@ -31,6 +31,7 @@
               "
               alt="店構え"
             />
+            <h2 class="heading-title">神戸元町商店街にある鮮魚店</h2>
           </div>
           <p>
             <!-- eslint-disable-next-line no-irregular-whitespace -->
@@ -77,22 +78,38 @@ export default Vue.extend({})
   }
 }
 
-.container {
+#container {
   margin: 0 auto;
-  max-width: 1080px;
+  max-width: 1640px;
   section {
-    height: 100vh;
+    // height: 100vh;
     > div {
-      padding-top: 32px;
-      padding-bottom: 32px;
+      padding-top: 64px;
+      padding-bottom: 64px;
       .heading {
         position: relative;
-        height: 300px;
+        height: calc(278px + (min(100vw, 1640px) - 300px) * 0.23);
+        margin-bottom: 40px;
         > img {
           position: absolute;
           width: 50%;
           height: 100%;
           object-fit: cover;
+        }
+        > h2 {
+          position: absolute;
+          // 0.02 : 画面幅 1640px の時に font-size 50px になるように調整した値
+          font-size: calc(24px + (min(100vw, 1640px) - 375px) * 0.02);
+          top: 75%;
+          /* stylelint-disable length-zero-no-unit */
+          left: calc(10px + max(0px, (100% - 350px) * 0.59));
+          width: calc(100% - (10px + max(0px, 100% - 350px) * 0.59));
+          padding-top: 5px;
+          padding-bottom: 5px;
+          padding-left: 20px;
+          // とりあえず
+          padding-right: 8px;
+          background-color: rgba(255, 255, 255, 0.9);
         }
       }
     }
