@@ -9,12 +9,27 @@
           alt="活魚なみき"
         />
       </h1>
+      <burger-button
+        :active="isActive"
+        :bar-color="'#ffffff'"
+        :bar-height="4"
+        :bar-width="42"
+        @click="isActive = !isActive"
+      />
     </header>
     <Nuxt />
   </main>
 </template>
+<script>
+import Vue from 'vue'
+import BurgerButton from 'vue-burger-button'
 
-<style>
+export default Vue.extend({
+  components: { BurgerButton },
+  data: () => ({ isActive: false }),
+})
+</script>
+<style lang="scss">
 *,
 *::before,
 *::after {
@@ -32,5 +47,26 @@ html {
 header {
   position: fixed;
   z-index: 1000;
+  display: flex;
+}
+
+.burguer-button {
+  height: 42px !important;
+}
+
+.burguer-button > .bar:nth-child(1) {
+  transform: translateY(-200%);
+}
+
+.burguer-button > .bar:nth-child(3) {
+  transform: translateY(200%);
+}
+
+.burguer-button.-active > .bar:nth-child(1) {
+  transform: translateY(100%) rotate(45deg);
+}
+
+.burguer-button.-active > .bar:nth-child(3) {
+  transform: translateY(-100%) rotate(-45deg);
 }
 </style>
