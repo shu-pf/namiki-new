@@ -14,10 +14,11 @@
       <burger-button
         :active="isActive"
         :bar-color="'#ffffff'"
-        :bar-height="4"
-        :bar-width="42"
+        :bar-height="2"
+        :bar-width="25"
         @click="isActive = !isActive"
       />
+      <navigationModal :is-active="isActive" />
     </header>
     <Nuxt />
   </main>
@@ -25,10 +26,21 @@
 <script>
 import Vue from 'vue'
 import BurgerButton from 'vue-burger-button'
+import navigationModal from '@/components/navigationModal'
 
 export default Vue.extend({
-  components: { BurgerButton },
+  components: { BurgerButton, navigationModal },
   data: () => ({ isActive: false }),
+  watch: {
+    isActive(isActive) {
+      const html = document.getElementsByTagName('html')
+      if (isActive === true) {
+        html[0].style.overflow = 'hidden'
+      } else {
+        html[0].style.overflow = 'auto'
+      }
+    },
+  },
 })
 </script>
 <style lang="scss">
@@ -53,31 +65,36 @@ header {
   width: 100%;
   justify-content: space-between;
   background-color: rgba(0, 0, 0, 0.5);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 16px;
+  padding-right: 16px;
   h1 {
-    margin-top: 16px;
-    margin-left: 16px;
-    margin-bottom: 8px;
+    z-index: 4;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 32px;
+    img {
+      height: 100%;
+    }
   }
   .burguer-button {
-    margin-right: 16px;
-    margin-top: 16px;
-    height: 42px !important;
+    z-index: 4;
+    height: 32px !important;
+    > .bar:nth-child(1) {
+      transform: translateY(-300%);
+    }
+    > .bar:nth-child(3) {
+      transform: translateY(300%);
+    }
   }
-}
-
-.burguer-button > .bar:nth-child(1) {
-  transform: translateY(-200%);
-}
-
-.burguer-button > .bar:nth-child(3) {
-  transform: translateY(200%);
-}
-
-.burguer-button.-active > .bar:nth-child(1) {
-  transform: translateY(100%) rotate(45deg);
-}
-
-.burguer-button.-active > .bar:nth-child(3) {
-  transform: translateY(-100%) rotate(-45deg);
+  .burguer-button.-active {
+    > .bar:nth-child(1) {
+      transform: translateY(100%) rotate(45deg);
+    }
+    > .bar:nth-child(3) {
+      transform: translateY(-100%) rotate(-45deg);
+    }
+  }
 }
 </style>
