@@ -2,12 +2,14 @@
   <main>
     <header>
       <h1>
-        <img
-          src="/img/common/logo.png"
-          srcset="/img/common/logo.png 1x, img/common/logo@2x.png 2x"
-          height="40px"
-          alt="活魚なみき"
-        />
+        <nuxt-link to="/">
+          <img
+            src="/img/common/logo.png"
+            srcset="/img/common/logo.png 1x, img/common/logo@2x.png 2x"
+            height="40px"
+            alt="活魚なみき"
+          />
+        </nuxt-link>
       </h1>
       <burger-button
         :active="isActive"
@@ -48,10 +50,19 @@ header {
   position: fixed;
   z-index: 1000;
   display: flex;
-}
-
-.burguer-button {
-  height: 42px !important;
+  width: 100%;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.5);
+  h1 {
+    margin-top: 16px;
+    margin-left: 16px;
+    margin-bottom: 8px;
+  }
+  .burguer-button {
+    margin-right: 16px;
+    margin-top: 16px;
+    height: 42px !important;
+  }
 }
 
 .burguer-button > .bar:nth-child(1) {
