@@ -11,13 +11,16 @@
           />
         </nuxt-link>
       </h1>
-      <burger-button
-        :active="isActive"
-        :bar-color="'#ffffff'"
-        :bar-height="2"
-        :bar-width="25"
-        @click="isActive = !isActive"
-      />
+      <div class="burger-button-container">
+        <span v-show="isActive">Close</span>
+        <burger-button
+          :active="isActive"
+          :bar-color="'#ffffff'"
+          :bar-height="2"
+          :bar-width="25"
+          @click="isActive = !isActive"
+        />
+      </div>
       <navigationModal :is-active="isActive" />
     </header>
     <Nuxt />
@@ -78,22 +81,30 @@ header {
       height: 100%;
     }
   }
-  .burguer-button {
+  .burger-button-container {
     z-index: 4;
-    height: 32px !important;
-    > .bar:nth-child(1) {
-      transform: translateY(-300%);
+    display: flex;
+    align-items: center;
+    span {
+      display: block;
+      margin-right: 24px;
     }
-    > .bar:nth-child(3) {
-      transform: translateY(300%);
+    .burguer-button {
+      height: 32px !important;
+      > .bar:nth-child(1) {
+        transform: translateY(-300%);
+      }
+      > .bar:nth-child(3) {
+        transform: translateY(300%);
+      }
     }
-  }
-  .burguer-button.-active {
-    > .bar:nth-child(1) {
-      transform: translateY(100%) rotate(45deg);
-    }
-    > .bar:nth-child(3) {
-      transform: translateY(-100%) rotate(-45deg);
+    .burguer-button.-active {
+      > .bar:nth-child(1) {
+        transform: translateY(100%) rotate(45deg);
+      }
+      > .bar:nth-child(3) {
+        transform: translateY(-100%) rotate(-45deg);
+      }
     }
   }
 }
