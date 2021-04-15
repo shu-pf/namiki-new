@@ -57,7 +57,7 @@ export default Vue.extend({
     a:hover {
       color: var(--color-primary);
     }
-    a.nuxt-link-active {
+    a.nuxt-link-exact-active {
       color: var(--color-primary);
     }
     .social-icons {
