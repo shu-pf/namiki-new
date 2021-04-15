@@ -85,9 +85,9 @@ header {
     z-index: 4;
     display: flex;
     align-items: center;
-    span {
+    > span {
       display: block;
-      margin-right: 24px;
+      margin-right: 16px;
     }
     .burguer-button {
       height: 32px !important;
