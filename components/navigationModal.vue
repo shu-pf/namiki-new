@@ -14,7 +14,7 @@
         </div>
         <div class="nav-container">
           <nav>
-            <nuxt-link v-show="isActive" to="/">トップページ</nuxt-link>
+            <nuxt-link to="/">トップページ</nuxt-link>
             <nuxt-link to="/shop">店舗販売</nuxt-link>
             <nuxt-link to="/2">卸売り</nuxt-link>
             <nuxt-link to="/3">アクセス</nuxt-link>
