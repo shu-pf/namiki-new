@@ -57,7 +57,7 @@ html {
   font-family: 'Times New Roman', 'YuMincho', 'Hiragino Mincho ProN',
     'Yu Mincho', 'MS PMincho', serif;
   font-size: 16px;
-  color: #70644f;
+  color: var(--color-primary);
   background-color: #e8e8e8;
   box-sizing: border-box;
 }

@@ -36,7 +36,7 @@ export default Vue.extend({
   width: 100%;
   height: 100%;
   z-index: 1;
-  background-color: #0f2350;
+  background-color: var(--color-secondary);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -55,10 +55,10 @@ export default Vue.extend({
       transition-duration: 500ms;
     }
     a:hover {
-      color: #70644f;
+      color: var(--color-primary);
     }
     a.nuxt-link-active {
-      color: #70644f;
+      color: var(--color-primary);
     }
     .social-icons {
       margin: 0 auto;
