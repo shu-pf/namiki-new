@@ -70,7 +70,7 @@ header {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 16px;

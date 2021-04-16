@@ -5,12 +5,18 @@
         <div>
           <div class="heading">
             <img
+              class="heading-img"
               src="/img/top/top-heading-1.png"
               srcset="
                 /img/top/top-heading-1.png    1x,
                 /img/top/top-heading-1@2x.png 2x
               "
               alt="店構え"
+            />
+            <img
+              class="subtitle"
+              src="/img/top/top-subtitle-ikeuo.svg"
+              alt="活魚"
             />
             <h2 class="heading-title">神戸元町商店街にある鮮魚店</h2>
           </div>
@@ -46,11 +52,17 @@ export default Vue.extend({})
         position: relative;
         height: calc(278px + (min(100vw, 1640px) - 300px) * 0.23);
         margin-bottom: 40px;
-        > img {
+        .heading-img {
           position: absolute;
           width: 50%;
           height: 100%;
           object-fit: cover;
+        }
+        .subtitle {
+          position: absolute;
+          left: 100%;
+          transform: translateX(-100%);
+          height: 60%;
         }
         > h2 {
           position: absolute;

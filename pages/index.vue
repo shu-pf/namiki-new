@@ -24,12 +24,18 @@
         <div>
           <div class="heading">
             <img
+              class="heading-img"
               src="/img/top/top-heading-1.png"
               srcset="
                 /img/top/top-heading-1.png    1x,
                 /img/top/top-heading-1@2x.png 2x
               "
               alt="店構え"
+            />
+            <img
+              class="subtitle"
+              src="/img/top/top-subtitle-ikeuo.svg"
+              alt="活魚"
             />
             <h2 class="heading-title">神戸元町商店街にある鮮魚店</h2>
           </div>
@@ -86,15 +92,34 @@ export default Vue.extend({})
     > div {
       padding-top: 64px;
       padding-bottom: 64px;
+      > p {
+        margin: 0 16px;
+      }
+      @media screen and (min-width: 1640px) {
+        > p {
+          margin: 0;
+        }
+      }
       .heading {
         position: relative;
         height: calc(278px + (min(100vw, 1640px) - 300px) * 0.23);
         margin-bottom: 40px;
-        > img {
+        .heading-img {
           position: absolute;
           width: 50%;
           height: 100%;
           object-fit: cover;
+        }
+        .subtitle {
+          position: absolute;
+          left: calc(100% - 16px);
+          transform: translateX(-100%);
+          height: 60%;
+        }
+        @media screen and (min-width: 1640px) {
+          .subtitle {
+            left: 100%;
+          }
         }
         > h2 {
           position: absolute;
