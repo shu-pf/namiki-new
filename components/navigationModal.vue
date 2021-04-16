@@ -14,8 +14,12 @@
         </div>
         <div class="nav-container">
           <nav>
-            <nuxt-link to="/">トップページ</nuxt-link>
-            <nuxt-link to="/shop">店舗販売</nuxt-link>
+            <nuxt-link to="/" @click.native.prevent="close"
+              >トップページ</nuxt-link
+            >
+            <nuxt-link to="/shop" @click.native.prevent="close"
+              >店舗販売</nuxt-link
+            >
             <nuxt-link to="/2">卸売り</nuxt-link>
             <nuxt-link to="/3">アクセス</nuxt-link>
             <nuxt-link to="/4">お問い合わせ</nuxt-link>
@@ -47,6 +51,11 @@
 import Vue from 'vue'
 export default Vue.extend({
   props: { isActive: Boolean },
+  methods: {
+    close() {
+      this.$emit('navigation-close')
+    },
+  },
 })
 </script>
 <style lang="scss" scoped>

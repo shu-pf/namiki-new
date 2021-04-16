@@ -21,7 +21,10 @@
           @click="isActive = !isActive"
         />
       </div>
-      <navigationModal :is-active="isActive" />
+      <navigationModal
+        :is-active="isActive"
+        @navigation-close="isActive = !isActive"
+      />
     </header>
     <Nuxt />
   </main>
