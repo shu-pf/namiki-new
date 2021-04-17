@@ -24,6 +24,7 @@
         <div>
           <div class="heading">
             <div
+              v-inview:animate="'fadeInRight'"
               v-prlx.background="{
                 speed: 0.05,
                 fromBottom: true,
@@ -32,13 +33,16 @@
               alt="店構え"
             />
             <img
+              v-inview:animate="'fadeIn'"
               class="subtitle"
               src="/img/top/top-subtitle-ikeuo.svg"
               alt="活魚"
             />
-            <h2 class="heading-title">神戸元町商店街にある鮮魚店</h2>
+            <h2 v-inview:animate="'fadeInRight'" class="heading-title">
+              神戸元町商店街にある鮮魚店
+            </h2>
           </div>
-          <p>
+          <p v-inview:animate="'fadeInRight'">
             <!-- eslint-disable-next-line no-irregular-whitespace -->
             　当店は創業明治120年の歴史を持ち、神戸で最古の鮮魚店です。<br /><br />
             <!-- eslint-disable-next-line no-irregular-whitespace -->
@@ -92,6 +96,7 @@ export default Vue.extend({})
       padding-top: 64px;
       padding-bottom: 64px;
       > p {
+        opacity: 0;
         margin: 0 16px;
       }
       @media screen and (min-width: 1640px) {
@@ -104,6 +109,7 @@ export default Vue.extend({})
         height: calc(278px + (min(100vw, 1640px) - 300px) * 0.23);
         margin-bottom: 40px;
         .heading-img {
+          opacity: 0;
           position: absolute;
           width: 50%;
           height: 100%;
@@ -120,8 +126,9 @@ export default Vue.extend({})
             left: 100%;
           }
         }
-        > h2 {
+        .heading-title {
           position: absolute;
+          opacity: 0;
           // 0.02 : 画面幅 1640px の時に font-size 50px になるように調整した値
           font-size: calc(24px + (min(100vw, 1640px) - 375px) * 0.02);
           top: 75%;

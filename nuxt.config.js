@@ -18,7 +18,14 @@ export default {
           '阪神電鉄 西元町駅 より徒歩1分。元町商店街の6丁目。卸売りはもちろん、店内では、毎日その日に浜から仕入れた新鮮な魚を、食べやすいように調理をした上販売しております。店主が自ら競りが行われる浜へ行き、長年の経験、本物の目利きで最高の魚を選んで参ります。',
       },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: 'stylesheet',
+        href:
+          'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css',
+      },
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -29,7 +36,7 @@ export default {
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: ['~/plugins/vue-prlx.js'],
+  plugins: ['~/plugins/vue-prlx.js', '~/plugins/inview.js'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
