@@ -23,13 +23,12 @@
       <section>
         <div>
           <div class="heading">
-            <img
+            <div
+              v-prlx.background="{
+                speed: 0.05,
+                fromBottom: true,
+              }"
               class="heading-img"
-              src="/img/top/top-heading-1.png"
-              srcset="
-                /img/top/top-heading-1.png    1x,
-                /img/top/top-heading-1@2x.png 2x
-              "
               alt="店構え"
             />
             <img
@@ -108,7 +107,7 @@ export default Vue.extend({})
           position: absolute;
           width: 50%;
           height: 100%;
-          object-fit: cover;
+          background: no-repeat center/100% url(/img/top/shop-outward@2x.png);
         }
         .subtitle {
           position: absolute;
