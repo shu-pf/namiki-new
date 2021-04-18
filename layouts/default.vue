@@ -3,19 +3,22 @@
     <header>
       <h1>
         <nuxt-link to="/">
-          <img
-            src="/img/common/logo.png"
-            srcset="/img/common/logo.png 1x, img/common/logo@2x.png 2x"
-            height="40px"
-            alt="活魚なみき"
-          />
+          <transition name="header-img">
+            <img
+              v-show="headerVisible"
+              src="/img/common/logo.png"
+              srcset="/img/common/logo.png 1x, img/common/logo@2x.png 2x"
+              height="40px"
+              alt="活魚なみき"
+            />
+          </transition>
         </nuxt-link>
       </h1>
       <div class="burger-button-container">
         <span v-show="isActive">Close</span>
         <burger-button
           :active="isActive"
-          :bar-color="'#ffffff'"
+          :bar-color="'#70644f'"
           :bar-height="2"
           :bar-width="25"
           @click="isActive = !isActive"
@@ -29,22 +32,39 @@
     <Nuxt />
   </main>
 </template>
-<script>
+<script lang="ts">
 import Vue from 'vue'
+// @ts-ignore
 import BurgerButton from 'vue-burger-button'
-import navigationModal from '@/components/navigationModal'
+import navigationModal from '@/components/navigationModal.vue'
 
 export default Vue.extend({
   components: { BurgerButton, navigationModal },
-  data: () => ({ isActive: false }),
+  data: () => ({ isActive: false, headerVisible: false }),
   watch: {
     isActive(isActive) {
+      // モーダルウィンドウが開いた際にスクロールさせないようにする
       const html = document.getElementsByTagName('html')
       if (isActive === true) {
         html[0].style.overflow = 'hidden'
       } else {
         html[0].style.overflow = 'auto'
       }
+    },
+  },
+  created() {
+    this.setListener()
+  },
+  methods: {
+    setListener() {
+      this.$nuxt.$on('show-header', this.showHeader)
+      this.$nuxt.$on('hide-header', this.hideHeader)
+    },
+    showHeader() {
+      this.headerVisible = true
+    },
+    hideHeader() {
+      this.headerVisible = false
     },
   },
 })
@@ -70,7 +90,6 @@ header {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  background-color: rgba(0, 0, 0, 0.3);
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 16px;
@@ -95,10 +114,10 @@ header {
     .burguer-button {
       height: 32px !important;
       > .bar:nth-child(1) {
-        transform: translateY(-300%);
+        transform: translateY(-350%);
       }
       > .bar:nth-child(3) {
-        transform: translateY(300%);
+        transform: translateY(350%);
       }
     }
     .burguer-button.-active {
@@ -110,5 +129,14 @@ header {
       }
     }
   }
+}
+
+.header-img-enter-active,
+.header-img-leave-active {
+  transition: opacity 0.8s;
+}
+.header-img-enter,
+.header-img-leave-to {
+  opacity: 0;
 }
 </style>

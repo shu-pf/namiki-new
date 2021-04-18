@@ -59,7 +59,18 @@
 <script lang="ts">
 import Vue from 'vue'
 
-export default Vue.extend({})
+export default Vue.extend({
+  mounted() {
+    this.$nuxt.$emit('hide-header')
+    window.onscroll = function () {
+      if (window.pageYOffset > window.innerHeight) {
+        this.$nuxt.$emit('show-header')
+      } else {
+        this.$nuxt.$emit('hide-header')
+      }
+    }
+  },
+})
 </script>
 <style lang="scss" scoped>
 .carousel {
