@@ -1,0 +1,98 @@
+.carousel {
+  height: 100vh;
+  > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.45;
+  }
+  .title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 70%;
+  }
+}
+
+#container {
+  margin: 0 auto;
+  max-width: 1640px;
+  section {
+    // height: 100vh;
+    > div {
+      padding-top: 64px;
+      padding-bottom: 64px;
+      > p {
+        opacity: 0;
+        margin: 0 16px;
+      }
+      @media screen and (min-width: 1640px) {
+        > p {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+// 見出し
+.heading {
+  position: relative;
+  // 278px を最小値として、画面幅に合わせて高さを大きくする
+  height: calc(278px + (min(100vw, 1640px) - 300px) * 0.23);
+  margin-bottom: 40px;
+  .heading-img {
+    opacity: 0;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+  }
+  .subtitle {
+    position: absolute;
+    left: calc(100% - 16px);
+    transform: translateX(-100%);
+    height: 60%;
+  }
+  @media screen and (min-width: 1640px) {
+    .subtitle {
+      left: 100%;
+    }
+  }
+  .heading-title {
+    position: absolute;
+    opacity: 0;
+    // 0.02 : 画面幅 1640px の時に font-size 50px になるように調整した値
+    font-size: calc(24px + (min(100vw, 1640px) - 375px) * 0.02);
+    bottom: 16px;
+    /* stylelint-disable length-zero-no-unit */
+    left: calc(10px + max(0px, (100% - 350px) * 0.59));
+    width: calc(100% - (10px + max(0px, 100% - 350px) * 0.59));
+    padding: 5px 0 5px 20px;
+    margin: 0;
+    // とりあえず
+    padding-right: 8px;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+}
+
+.heading-small {
+  // 278px を最小値として、画面幅に合わせて高さを大きくする
+  height: calc(278px + (min(100vw, 1640px) - 300px) * 0.13);
+}
+
+// 見出し写真
+.shop-outward {
+  background: no-repeat center/cover url(/img/top/shop-outward@2x.png);
+}
+.cooking {
+  background: no-repeat center/cover url(/img/top/cooking@2x.png);
+}
