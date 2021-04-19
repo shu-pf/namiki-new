@@ -33,7 +33,6 @@ export default {
     'normalize.css',
     'vue-burger-button/dist/vue-burger-button.css',
     '~/assets/css/main.scss',
-    '~/assets/css/index.scss',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins

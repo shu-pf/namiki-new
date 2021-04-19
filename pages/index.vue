@@ -1,7 +1,8 @@
 <template>
   <article>
-    <div class="carousel">
+    <div class="c-carousel">
       <img
+        class="c-carousel__img"
         srcset="
           /img/top/top-carousel-1.png    1x,
           /img/top/top-carousel-1@2x.png 2x
@@ -9,10 +10,10 @@
         src="/img/top/top-carousel-1.png"
         alt="店構え"
       />
-      <div class="overlay"></div>
+      <div class="c-carousel__overlay"></div>
       <h1>
         <img
-          class="title"
+          class="c-carousel__title"
           src="/img/top/top-title.png"
           alt="活魚なみき"
           srcset="/img/top/top-title.png 1x, /img/top/top-title@2x.png 2x"
@@ -20,29 +21,29 @@
       </h1>
     </div>
     <div id="container">
-      <section>
+      <section class="p-section">
         <div>
-          <div class="heading">
+          <div class="c-heading">
             <div
               v-inview:animate="'fadeInRight'"
               v-prlx.background="{
                 speed: 0.05,
                 fromBottom: true,
               }"
-              class="heading-img shop-outward"
+              class="c-heading__img--shop-outward"
               alt="店構え"
             />
             <img
               v-inview:animate="'fadeIn'"
-              class="subtitle"
+              class="c-heading__subtitle"
               src="/img/top/top-subtitle-ikeuo.svg"
               alt="活魚"
             />
-            <h2 v-inview:animate="'fadeInRight'" class="heading-title">
+            <h2 v-inview:animate="'fadeInRight'" class="c-heading__title">
               神戸元町商店街にある鮮魚店
             </h2>
           </div>
-          <p v-inview:animate="'fadeInRight'">
+          <p v-inview:animate="'fadeInRight'" class="p-section__paragraph">
             <!-- eslint-disable-next-line no-irregular-whitespace -->
             　当店は創業明治120年の歴史を持ち、神戸で最古の鮮魚店です。<br /><br />
             <!-- eslint-disable-next-line no-irregular-whitespace -->
@@ -52,29 +53,29 @@
           </p>
         </div>
       </section>
-      <section>
+      <section class="p-section">
         <div>
-          <div class="heading heading-small">
+          <div class="c-heading--small">
             <div
               v-inview:animate="'fadeInRight'"
               v-prlx.background="{
                 speed: 0.05,
                 fromBottom: true,
               }"
-              class="heading-img cooking"
+              class="c-heading__img--cooking"
               alt="料理風景"
             />
             <img
               v-inview:animate="'fadeIn'"
-              class="subtitle"
+              class="c-heading__subtitle"
               src="/img/top/top-subtitle-ikeuo.svg"
               alt="活魚"
             />
-            <h2 v-inview:animate="'fadeInRight'" class="heading-title">
+            <h2 v-inview:animate="'fadeInRight'" class="c-heading__title">
               こだわり
             </h2>
           </div>
-          <p v-inview:animate="'fadeInRight'">
+          <p v-inview:animate="'fadeInRight'" class="p-section__paragraph">
             <!-- eslint-disable-next-line no-irregular-whitespace -->
             内容 ・毎日昼あみ、朝あみ行っている ・それが昼に店に並ぶ など<br />
           </p>
