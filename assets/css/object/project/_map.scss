@@ -1,0 +1,9 @@
+.p-map {
+  @extend .u-gutter;
+  .p-map__title {
+    opacity: 0;
+  }
+  .p-map__map {
+    opacity: 0;
+  }
+}

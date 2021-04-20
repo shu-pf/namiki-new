@@ -1,0 +1,14 @@
+.p-sns {
+  @extend .u-gutter;
+  &__social-links {
+    opacity: 0;
+    display: flex !important;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 -4px;
+  }
+  &__social-link {
+    flex: 1;
+    margin: 4px;
+  }
+}

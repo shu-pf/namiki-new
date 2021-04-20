@@ -1,0 +1,9 @@
+.u-gutter {
+  margin: 0 16px;
+}
+
+@media screen and (min-width: 1640px) {
+  .u-gutter {
+    margin: 0;
+  }
+}

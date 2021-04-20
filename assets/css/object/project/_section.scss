@@ -6,7 +6,7 @@
   }
   &__paragraph {
     opacity: 0;
-    margin: 0 16px;
+    @extend .u-gutter;
   }
   @media screen and (min-width: 1640px) {
     &__paragraph {
