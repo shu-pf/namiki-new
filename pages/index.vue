@@ -66,7 +66,7 @@
             <img
               v-inview:animate="'fadeIn'"
               class="c-heading__subtitle"
-              src="/img/top/header_subtitle02.svg"
+              src="/img/top/heading_subtitle02.svg"
               alt="活魚"
             />
             <h2 v-inview:animate="'fadeInRight'" class="c-heading__title">
@@ -98,6 +98,38 @@
             </div>
             <div class="c-cards__arrow">scroll</div>
           </div>
+        </div>
+      </section>
+      <section class="p-section">
+        <div>
+          <div class="c-heading">
+            <div
+              v-inview:animate="'fadeInRight'"
+              v-prlx.background="{
+                speed: 0.05,
+                fromBottom: true,
+              }"
+              class="c-heading__img--shop-outward"
+              alt="店構え"
+            />
+            <img
+              v-inview:animate="'fadeIn'"
+              class="c-heading__subtitle"
+              src="/img/top/heading_subtitle01.svg"
+              alt="活魚"
+            />
+            <h2 v-inview:animate="'fadeInRight'" class="c-heading__title">
+              神戸元町商店街にある鮮魚店
+            </h2>
+          </div>
+          <p v-inview:animate="'fadeInRight'" class="p-section__paragraph">
+            <!-- eslint-disable-next-line no-irregular-whitespace -->
+            　当店は創業明治120年の歴史を持ち、神戸で最古の鮮魚店です。<br /><br />
+            <!-- eslint-disable-next-line no-irregular-whitespace -->
+            　毎日、店主が自ら競りが行われる浜へ行き、長年の経験、本物の目利きで最高のものを選んで参ります。<br />
+            <!-- eslint-disable-next-line no-irregular-whitespace -->
+            　他のお店では見られない種類の海介顔、養殖でない天然物、本鮪の様な最高の高級魚から、サンマのような毎日の食卓へのお手頃なお魚、そして、抜群の鮮度のものを品揃えさせて頂いております。
+          </p>
         </div>
       </section>
     </div>
