@@ -20,13 +20,15 @@
 // Component
 // -----------------------------------------------------------------
 
-@import 'object/component/carousel';
+@import 'object/component/arrow';
+@import 'object/component/cards';
 @import 'object/component/heading';
 
 // -----------------------------------------------------------------
 // Project
 // -----------------------------------------------------------------
 
+@import 'object/project/carousel';
 @import 'object/project/_section';
 
 // -----------------------------------------------------------------

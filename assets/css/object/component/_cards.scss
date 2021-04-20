@@ -1,0 +1,81 @@
+.c-cards {
+  &__inner {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    overflow: scroll;
+  }
+  &__card {
+    height: 220px;
+    min-width: 220px;
+    border: medium solid var(--color-primary);
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition-duration: 500ms;
+  }
+  &__card:hover {
+    opacity: 0.8;
+  }
+  &__first-card {
+    @extend .c-cards__card;
+
+    margin-right: 4px;
+    background: no-repeat center/cover url(/img/top/sub_img01@2x.png);
+  }
+  &__second-card {
+    @extend .c-cards__card;
+
+    margin: 0 4px;
+    background: no-repeat center/cover url(/img/top/sub_img02@2x.png);
+  }
+  &__third-card {
+    @extend .c-cards__card;
+
+    margin-left: 4px;
+    background: no-repeat center/cover url(/img/top/sub_img03@2x.png);
+  }
+  &__text {
+    opacity: 1 !important;
+    color: white;
+    font-size: max(16px, 2.5vw);
+    font-weight: bold;
+    line-height: 2;
+  }
+  &__arrow {
+    margin-left: 16px;
+    margin-top: 8px;
+    letter-spacing: 4px;
+  }
+  &__arrow::after {
+    content: ' ';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-left: 4px;
+    border-top: 2px solid var(--color-primary);
+    border-right: 2px solid var(--color-primary);
+    animation: c-cards__arrow-slide 1.5s infinite;
+  }
+  @keyframes c-cards__arrow-slide {
+    0% {
+      transform: rotate(45deg) translate(0, 0);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      transform: rotate(45deg) translate(8px, -8px);
+      opacity: 0;
+    }
+  }
+  // 676px : 幅 220 px のブロック * 3 + 8px(余白) + 8px(余白)
+  @media screen and (min-width: 676px) {
+    &__arrow {
+      display: none;
+    }
+  }
+}

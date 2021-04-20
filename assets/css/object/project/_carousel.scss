@@ -1,4 +1,4 @@
-.c-carousel {
+.p-carousel {
   height: 100vh;
   &__img {
     height: 100%;
@@ -20,5 +20,10 @@
     left: 50%;
     transform: translate(-50%, -50%);
     height: 70%;
+  }
+  &__arrow {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
   }
 }

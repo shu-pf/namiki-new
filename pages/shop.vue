@@ -6,16 +6,13 @@
           <div class="heading">
             <img
               class="heading-img"
-              src="/img/top/top-heading-1.png"
-              srcset="
-                /img/top/top-heading-1.png    1x,
-                /img/top/top-heading-1@2x.png 2x
-              "
+              src="/img/top/heading-1.png"
+              srcset="/img/top/heading-1.png 1x, /img/top/heading-1@2x.png 2x"
               alt="店構え"
             />
             <img
               class="subtitle"
-              src="/img/top/top-subtitle-ikeuo.svg"
+              src="/img/top/subtitle-ikeuo.svg"
               alt="活魚"
             />
             <h2 class="heading-title">神戸元町商店街にある鮮魚店</h2>

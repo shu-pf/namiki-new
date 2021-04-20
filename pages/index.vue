@@ -1,24 +1,22 @@
 <template>
   <article>
-    <div class="c-carousel">
+    <div class="p-carousel">
       <img
-        class="c-carousel__img"
-        srcset="
-          /img/top/top-carousel-1.png    1x,
-          /img/top/top-carousel-1@2x.png 2x
-        "
-        src="/img/top/top-carousel-1.png"
+        class="p-carousel__img"
+        srcset="/img/top/carousel-1.png 1x, /img/top/carousel-1@2x.png 2x"
+        src="/img/top/carousel-1.png"
         alt="店構え"
       />
-      <div class="c-carousel__overlay"></div>
+      <div class="p-carousel__overlay"></div>
       <h1>
         <img
-          class="c-carousel__title"
-          src="/img/top/top-title.png"
+          class="p-carousel__title"
+          src="/img/top/title.png"
           alt="活魚なみき"
-          srcset="/img/top/top-title.png 1x, /img/top/top-title@2x.png 2x"
+          srcset="/img/top/title.png 1x, /img/top/title@2x.png 2x"
         />
       </h1>
+      <a href="#" class="p-carousel__arrow c-arrow"><span></span>Scroll</a>
     </div>
     <div id="container">
       <section class="p-section">
@@ -36,7 +34,7 @@
             <img
               v-inview:animate="'fadeIn'"
               class="c-heading__subtitle"
-              src="/img/top/top-subtitle-ikeuo.svg"
+              src="/img/top/header_subtitle01.svg"
               alt="活魚"
             />
             <h2 v-inview:animate="'fadeInRight'" class="c-heading__title">
@@ -68,17 +66,38 @@
             <img
               v-inview:animate="'fadeIn'"
               class="c-heading__subtitle"
-              src="/img/top/top-subtitle-ikeuo.svg"
+              src="/img/top/header_subtitle02.svg"
               alt="活魚"
             />
             <h2 v-inview:animate="'fadeInRight'" class="c-heading__title">
-              こだわり
+              抜群の鮮度のものを
             </h2>
           </div>
           <p v-inview:animate="'fadeInRight'" class="p-section__paragraph">
             <!-- eslint-disable-next-line no-irregular-whitespace -->
             内容 ・毎日昼あみ、朝あみ行っている ・それが昼に店に並ぶ など<br />
           </p>
+          <div class="p-section__cards c-cards">
+            <div class="c-cards__inner">
+              <div class="c-cards__first-card">
+                <span class="c-cards__text"
+                  >長年の経験により磨かれた<br />目利きによる仕入れ</span
+                >
+              </div>
+              <div class="c-cards__second-card">
+                <span class="c-cards__text"
+                  >毎日昼あみに行き <br />鮮度が高いものを販売</span
+                >
+              </div>
+              <div class="c-cards__third-card">
+                <span class="c-cards__text"
+                  >マイクロオゾン機能搭載の<br />
+                  大きなの水槽</span
+                >
+              </div>
+            </div>
+            <div class="c-cards__arrow">scroll</div>
+          </div>
         </div>
       </section>
     </div>

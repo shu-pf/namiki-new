@@ -4,11 +4,8 @@
       <div class="navigation__main">
         <div class="navigation__img-container">
           <img
-            srcset="
-              /img/top/top-carousel-1.png    1x,
-              /img/top/top-carousel-1@2x.png 2x
-            "
-            src="/img/top/top-carousel-1.png"
+            srcset="/img/top/carousel-1.png 1x, /img/top/carousel-1@2x.png 2x"
+            src="/img/top/carousel-1.png"
             alt="店構え"
           />
         </div>
