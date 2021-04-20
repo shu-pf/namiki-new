@@ -1,6 +1,10 @@
 <template>
   <article>
-    <div id="container"></div>
+    <div id="container">
+      <section class="p-section--simple">
+        <h1 class="c-heading--border-bottom">アクセス</h1>
+      </section>
+    </div>
   </article>
 </template>
 

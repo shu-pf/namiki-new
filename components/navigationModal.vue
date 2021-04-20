@@ -17,9 +17,15 @@
             <nuxt-link to="/shop" @click.native.prevent="close"
               >店舗販売</nuxt-link
             >
-            <nuxt-link to="/wholesale">卸売り</nuxt-link>
-            <nuxt-link to="/access">アクセス</nuxt-link>
-            <nuxt-link to="/contact">お問い合わせ</nuxt-link>
+            <nuxt-link to="/wholesale" @click.native.prevent="close"
+              >卸売り</nuxt-link
+            >
+            <nuxt-link to="/access" @click.native.prevent="close"
+              >アクセス</nuxt-link
+            >
+            <nuxt-link to="/contact" @click.native.prevent="close"
+              >お問い合わせ</nuxt-link
+            >
             <div class="social-icons">
               <img src="/img/common/icon/facebook.svg" alt="facebook" />
               <img

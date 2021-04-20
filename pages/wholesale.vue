@@ -17,7 +17,7 @@
               src="/img/shop/heading_subtitle01.svg"
               alt="店舗"
             />
-            <h2 class="c-heading__title">卸売</h2>
+            <h1 class="c-heading__title">卸売</h1>
           </div>
           <p class="p-section__paragraph">
             　活魚なみきでは、新鮮で旬なお魚をその日、その場で下処理・調理いたします。<br />
