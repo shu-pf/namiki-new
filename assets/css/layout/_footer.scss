@@ -1,0 +1,18 @@
+.footer {
+  height: 100vh;
+  background-color: var(--color-secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  &__title {
+    height: 60%;
+  }
+  &__copywrite {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    white-space: nowrap;
+  }
+}

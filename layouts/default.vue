@@ -30,6 +30,20 @@
       />
     </header>
     <Nuxt />
+    <footer class="footer">
+      <img
+        class="footer__title"
+        src="/img/common/title.png"
+        alt="活魚なみき"
+        srcset="/img/common/title.png 1x, /img/common/title@2x.png 2x"
+      />
+      <div class="footer__copywrite">
+        <span
+          >&copy; {{ new Date().getFullYear() }} namiki All rights
+          reserved.</span
+        >
+      </div>
+    </footer>
   </main>
 </template>
 <script lang="ts">
