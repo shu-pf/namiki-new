@@ -17,7 +17,7 @@
               src="/img/shop/heading_subtitle01.svg"
               alt="店舗"
             />
-            <h2 class="c-heading__title">店舗販売</h2>
+            <h2 class="c-heading__title">卸売</h2>
           </div>
           <p class="p-section__paragraph">
             　活魚なみきでは、新鮮で旬なお魚をその日、その場で下処理・調理いたします。<br />
@@ -26,20 +26,6 @@
             　旬によって販売しているお魚が異なりますので、ぜひ一度魚秀へお立ち寄りくださいませ。
           </p>
         </div>
-      </section>
-      <section class="u-gutter">
-        <h2 class="c-heading--border-bottom">特売情報</h2>
-        <p class="c-sale">
-          「３」と「７」のつく日は<br /><span class="c-sale__title"
-            >「なみきの日」</span
-          ><br />
-          お刺身・鮮魚・お寿司 の よりどり3パック<br />
-          <span class="c-sale__price">９７２円（税込）</span
-          >にてご奉仕しております。
-        </p>
-      </section>
-      <section class="u-gutter">
-        <h2 class="c-heading--border-bottom">商品写真</h2>
       </section>
     </div>
   </article>
