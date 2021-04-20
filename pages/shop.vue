@@ -1,7 +1,7 @@
 <template>
   <article>
     <div id="container">
-      <section class="p-section">
+      <section class="p-section--padding-bottom-0">
         <div>
           <div class="c-heading">
             <div
@@ -9,22 +9,37 @@
                 speed: 0.05,
                 fromBottom: true,
               }"
-              class="c-heading__img--top-heading-img01"
+              class="c-heading__img--shop-heading-img01"
               alt="店構え"
             />
             <img
               class="c-heading__subtitle"
-              src="/img/top/heading_subtitle01.svg"
-              alt="活魚"
+              src="/img/shop/heading_subtitle01.svg"
+              alt="店舗"
             />
             <h2 class="c-heading__title">神戸元町商店街にある鮮魚店</h2>
           </div>
           <p class="p-section__paragraph">
-            　当店は創業明治120年の歴史を持ち、神戸で最古の鮮魚店です。<br /><br />
-            　毎日、店主が自ら競りが行われる浜へ行き、長年の経験、本物の目利きで最高のものを選んで参ります。<br />
-            　他のお店では見られない種類の海介顔、養殖でない天然物、本鮪の様な最高の高級魚から、サンマのような毎日の食卓へのお手頃なお魚、そして、抜群の鮮度のものを品揃えさせて頂いております。
+            　活魚なみきでは、新鮮で旬なお魚をその日、その場で下処理・調理いたします。<br />
+            　『お刺身・焼く・煮る』など、お客様のご要望をお伝えください。<br />
+            　他にも、既に下処理・調理を施した商品もご提供 しております。<br />
+            　旬によって販売しているお魚が異なりますので、ぜひ一度魚秀へお立ち寄りくださいませ。
           </p>
         </div>
+      </section>
+      <section class="u-gutter">
+        <h2 class="c-heading--border-bottom">特売情報</h2>
+        <p class="c-sale">
+          「３」と「７」のつく日は<br /><span class="c-sale__title"
+            >「なみきの日」</span
+          ><br />
+          お刺身・鮮魚・お寿司 の よりどり3パック<br />
+          <span class="c-sale__price">９７２円（税込）</span
+          >にてご奉仕しております。
+        </p>
+      </section>
+      <section class="u-gutter">
+        <h2 class="c-heading--border-bottom">商品写真</h2>
       </section>
     </div>
   </article>

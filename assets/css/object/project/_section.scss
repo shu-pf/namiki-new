@@ -16,3 +16,11 @@
     margin-top: 16px;
   }
 }
+
+.p-section--padding-bottom-0 {
+  @extend .p-section;
+  > div {
+    padding-top: 64px;
+    padding-bottom: 0;
+  }
+}

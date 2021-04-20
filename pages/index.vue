@@ -126,7 +126,7 @@
             <img
               v-inview:animate="'fadeIn'"
               class="c-heading__subtitle u-opacity--0"
-              src="/img/top/heading_subtitle01.svg"
+              src="/img/top/heading_subtitle03.svg"
               alt="活魚"
             />
             <h2
