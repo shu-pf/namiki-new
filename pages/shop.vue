@@ -38,8 +38,55 @@
           ><span>にてご奉仕しております。</span>
         </p>
       </section>
-      <section class="u-gutter">
+      <section class="u-gutter u-mb4">
         <h2 class="c-heading--border-bottom">商品写真</h2>
+        <div class="c-photos">
+          <img
+            class="c-photos__photo01"
+            src="/img/shop/item_photo01.png"
+            alt=""
+            srcset="
+              /img/shop/item_photo01.png    1x,
+              /img/shop/item_photo01@2x.png 2x
+            "
+          />
+          <img
+            class="c-photos__photo02"
+            src="/img/shop/item_photo01.png"
+            alt=""
+            srcset="
+              /img/shop/item_photo01.png    1x,
+              /img/shop/item_photo01@2x.png 2x
+            "
+          />
+          <img
+            class="c-photos__photo03"
+            src="/img/shop/item_photo01.png"
+            alt=""
+            srcset="
+              /img/shop/item_photo01.png    1x,
+              /img/shop/item_photo01@2x.png 2x
+            "
+          />
+          <img
+            class="c-photos__photo04"
+            src="/img/shop/item_photo01.png"
+            alt=""
+            srcset="
+              /img/shop/item_photo01.png    1x,
+              /img/shop/item_photo01@2x.png 2x
+            "
+          />
+          <img
+            class="c-photos__photo05"
+            src="/img/shop/item_photo01.png"
+            alt=""
+            srcset="
+              /img/shop/item_photo01.png    1x,
+              /img/shop/item_photo01@2x.png 2x
+            "
+          />
+        </div>
       </section>
     </div>
   </article>

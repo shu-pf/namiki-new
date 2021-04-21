@@ -1,0 +1,36 @@
+.c-photos {
+  display: grid;
+  width: 100%;
+  grid-template:
+    'photo01 photo01 photo01 photo02 photo02 photo02'
+    'photo03 photo03 photo04 photo04 photo05 photo05';
+  img {
+    width: 100%;
+  }
+  &__photo01 {
+    grid-area: photo01;
+    padding-right: 4px;
+    padding-bottom: 8px;
+  }
+  &__photo02 {
+    grid-area: photo02;
+    padding-left: 4px;
+    padding-bottom: 8px;
+  }
+  &__photo03 {
+    grid-area: photo03;
+    padding-top: 8px;
+    padding-right: 4px;
+  }
+  &__photo04 {
+    grid-area: photo04;
+    padding-top: 8px;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+  &__photo05 {
+    grid-area: photo05;
+    padding-top: 8px;
+    padding-left: 4px;
+  }
+}
