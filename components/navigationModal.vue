@@ -56,6 +56,7 @@ export default Vue.extend({
   props: { isActive: Boolean },
   methods: {
     close() {
+      this.$nuxt.$emit('start-loading')
       this.$emit('navigation-close')
     },
   },

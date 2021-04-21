@@ -1,0 +1,28 @@
+.p-modal--loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: var(--color-secondary);
+  z-index: 1001;
+  display: flex;
+  align-items: center;
+  &--fade {
+    &-leave-active {
+      transition: opacity 0.8s;
+    }
+    &-enter {
+      opacity: 1;
+    }
+    &-enter-to {
+      opacity: 1;
+    }
+    &-leave {
+      opacity: 1;
+    }
+    &-leave-to {
+      opacity: 0;
+    }
+  }
+}

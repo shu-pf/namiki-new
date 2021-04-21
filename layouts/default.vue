@@ -30,7 +30,11 @@
       />
     </header>
     <Nuxt />
-    <div v-if="loading" class="c-modal--loading"></div>
+    <transition name="navigation--fade">
+      <div v-show="loading" class="p-modal--loading">
+        <div class="c-loader">Loading...</div>
+      </div>
+    </transition>
     <footer class="footer">
       <img
         class="footer__title"
