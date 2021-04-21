@@ -28,6 +28,11 @@
 
     background: no-repeat center/cover url(/img/shop/heading_img01@2x.png);
   }
+  &__img--wholesale-heading-img01 {
+    @extend .c-heading__img;
+
+    background: no-repeat center/cover url(/img/wholesale/heading_img01@2x.png);
+  }
   &__subtitle {
     position: absolute;
     left: calc(100% - 16px);

@@ -35,7 +35,7 @@
           ><br />
           お刺身・鮮魚・お寿司 の よりどり3パック<br />
           <span class="c-sale__price">９７２円（税込）</span
-          >にてご奉仕しております。
+          ><span>にてご奉仕しております。</span>
         </p>
       </section>
       <section class="u-gutter">
