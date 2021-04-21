@@ -31,6 +31,7 @@
               class="c-heading__img--top-heading-img01 u-opacity--0"
               alt="店構え"
             />
+            <img src="/img/top/heading_img01@2x.png" style="display: none" />
             <img
               v-inview:animate="'fadeIn'"
               class="c-heading__subtitle u-opacity--0"
@@ -237,13 +238,15 @@
     </div>
   </article>
 </template>
-
 <script lang="ts">
 import Vue from 'vue'
+// @ts-ignore
+import imagesLoaded from 'imagesloaded'
 
 export default Vue.extend({
   mounted() {
     this.$nuxt.$emit('hide-header')
+    // ヘッダーアイコンをカルーセル上で表示させない
     window.onscroll = function () {
       if (window.pageYOffset > window.innerHeight) {
         this.$nuxt.$emit('show-header')
@@ -251,6 +254,10 @@ export default Vue.extend({
         this.$nuxt.$emit('hide-header')
       }
     }
+    const elem = document.getElementsByTagName('body')
+    imagesLoaded(elem, () => {
+      console.log('Img Loaded')
+    })
   },
 })
 </script>
