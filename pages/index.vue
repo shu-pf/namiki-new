@@ -8,7 +8,7 @@
         alt="店構え"
       />
       <div class="p-carousel__overlay"></div>
-      <h1>
+      <h1 class="u-m0">
         <img
           class="p-carousel__title"
           src="/img/common/title.png"

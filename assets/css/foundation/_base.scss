@@ -2,6 +2,9 @@
 *::before,
 *::after {
   box-sizing: inherit;
+  // in-viewで要素が画面外に飛び出る時にスクロールが発生するため
+  // 本来であれば、スクロールが発生するときだけにそのクラスに対してこの属性を付けたい
+  overflow: hidden;
 }
 
 html {
@@ -11,9 +14,14 @@ html {
   color: var(--color-primary);
   background-color: #e8e8e8;
   box-sizing: border-box;
+  overflow: visible;
 }
 
 #container {
   margin: 0 auto;
   max-width: var(--container-max-width);
+}
+
+body {
+  overflow: visible;
 }
