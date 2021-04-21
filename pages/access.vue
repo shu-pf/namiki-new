@@ -1,5 +1,5 @@
 <template>
-  <article>
+  <article id="access">
     <div id="container">
       <section class="p-section--simple u-gutter">
         <h1 class="c-heading--border-bottom">アクセス</h1>
@@ -42,10 +42,19 @@
 
 <script lang="ts">
 import Vue from 'vue'
+// @ts-ignore
+import imagesLoaded from 'imagesloaded'
 
 export default Vue.extend({
+  created() {
+    this.$nuxt.$emit('start-loading')
+  },
   mounted() {
     this.$nuxt.$emit('show-header')
+    const access = document.getElementById('access')
+    imagesLoaded(access, () => {
+      this.$nuxt.$emit('loaded')
+    })
   },
 })
 </script>

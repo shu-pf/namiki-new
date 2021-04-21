@@ -1,5 +1,5 @@
 <template>
-  <article>
+  <article id="contact">
     <div id="container">
       <section class="p-section--simple u-gutter">
         <h1 class="c-heading--border-bottom">お問い合わせ</h1>
@@ -31,10 +31,19 @@
 
 <script lang="ts">
 import Vue from 'vue'
+// @ts-ignore
+import imagesLoaded from 'imagesloaded'
 
 export default Vue.extend({
+  created() {
+    this.$nuxt.$emit('start-loading')
+  },
   mounted() {
     this.$nuxt.$emit('show-header')
+    const contact = document.getElementById('contact')
+    imagesLoaded(contact, () => {
+      this.$nuxt.$emit('loaded')
+    })
   },
 })
 </script>

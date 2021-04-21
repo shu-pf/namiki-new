@@ -1,5 +1,5 @@
 <template>
-  <article>
+  <article id="top">
     <div class="p-carousel">
       <img
         class="p-carousel__img"
@@ -244,6 +244,9 @@ import Vue from 'vue'
 import imagesLoaded from 'imagesloaded'
 
 export default Vue.extend({
+  created() {
+    this.$nuxt.$emit('start-loading')
+  },
   mounted() {
     this.$nuxt.$emit('hide-header')
     // ヘッダーアイコンをカルーセル上で表示させない
@@ -254,9 +257,9 @@ export default Vue.extend({
         this.$nuxt.$emit('hide-header')
       }
     }
-    const elem = document.getElementsByTagName('body')
-    imagesLoaded(elem, () => {
-      console.log('Img Loaded')
+    const top = document.getElementById('top')
+    imagesLoaded(top, () => {
+      this.$nuxt.$emit('loaded')
     })
   },
 })

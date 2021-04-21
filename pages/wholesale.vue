@@ -1,5 +1,5 @@
 <template>
-  <article>
+  <article id="wholesale">
     <div id="container">
       <section class="p-section--padding-bottom-0">
         <div>
@@ -11,6 +11,10 @@
               }"
               class="c-heading__img--wholesale-heading-img01"
               alt="競り市"
+            />
+            <img
+              src="/img/wholesale/heading_img01@2x.png"
+              style="display: none"
             />
             <img
               class="c-heading__subtitle"
@@ -44,10 +48,19 @@
 
 <script lang="ts">
 import Vue from 'vue'
+// @ts-ignore
+import imagesLoaded from 'imagesloaded'
 
 export default Vue.extend({
+  created() {
+    this.$nuxt.$emit('start-loading')
+  },
   mounted() {
     this.$nuxt.$emit('show-header')
+    const wholesale = document.getElementById('wholesale')
+    imagesLoaded(wholesale, () => {
+      this.$nuxt.$emit('loaded')
+    })
   },
 })
 </script>

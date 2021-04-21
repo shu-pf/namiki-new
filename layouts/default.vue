@@ -30,6 +30,7 @@
       />
     </header>
     <Nuxt />
+    <div v-if="loading" class="c-modal--loading"></div>
     <footer class="footer">
       <img
         class="footer__title"
@@ -54,7 +55,7 @@ import navigationModal from '@/components/navigationModal.vue'
 
 export default Vue.extend({
   components: { BurgerButton, navigationModal },
-  data: () => ({ isActive: false, headerVisible: false }),
+  data: () => ({ isActive: false, headerVisible: false, loading: true }),
   watch: {
     isActive(isActive) {
       // モーダルウィンドウが開いた際にスクロールさせないようにする
@@ -73,12 +74,20 @@ export default Vue.extend({
     setListener() {
       this.$nuxt.$on('show-header', this.showHeader)
       this.$nuxt.$on('hide-header', this.hideHeader)
+      this.$nuxt.$on('loaded', this.loaded)
+      this.$nuxt.$on('start-loading', this.startLoading)
     },
     showHeader() {
       this.headerVisible = true
     },
     hideHeader() {
       this.headerVisible = false
+    },
+    loaded() {
+      this.loading = false
+    },
+    startLoading() {
+      this.loading = true
     },
   },
 })

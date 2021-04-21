@@ -1,5 +1,5 @@
 <template>
-  <article>
+  <article id="shop">
     <div id="container">
       <section class="p-section--padding-bottom-0">
         <div>
@@ -12,6 +12,7 @@
               class="c-heading__img--shop-heading-img01"
               alt="店構え"
             />
+            <img src="/img/shop/heading_img01@2x.png" style="display: none" />
             <img
               class="c-heading__subtitle"
               src="/img/shop/heading_subtitle01.svg"
@@ -94,10 +95,19 @@
 
 <script lang="ts">
 import Vue from 'vue'
+// @ts-ignore
+import imagesLoaded from 'imagesloaded'
 
 export default Vue.extend({
+  created() {
+    this.$nuxt.$emit('start-loading')
+  },
   mounted() {
     this.$nuxt.$emit('show-header')
+    const shop = document.getElementById('shop')
+    imagesLoaded(shop, () => {
+      this.$nuxt.$emit('loaded')
+    })
   },
 })
 </script>
