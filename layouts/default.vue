@@ -30,7 +30,7 @@
       />
     </header>
     <Nuxt />
-    <transition name="navigation--fade">
+    <transition name="p-modal--loading--fade">
       <div v-show="loading" class="p-modal--loading">
         <div class="c-loader">Loading...</div>
       </div>
@@ -91,7 +91,9 @@ export default Vue.extend({
       this.loading = false
     },
     startLoading() {
-      this.loading = true
+      if (!this.loading) {
+        this.loading = true
+      }
     },
   },
 })

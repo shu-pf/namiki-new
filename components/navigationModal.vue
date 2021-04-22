@@ -11,21 +11,11 @@
         </div>
         <div class="navigation__nav-container">
           <nav>
-            <nuxt-link to="/" @click.native.prevent="close"
-              >トップページ</nuxt-link
-            >
-            <nuxt-link to="/shop" @click.native.prevent="close"
-              >店舗販売</nuxt-link
-            >
-            <nuxt-link to="/wholesale" @click.native.prevent="close"
-              >卸売り</nuxt-link
-            >
-            <nuxt-link to="/access" @click.native.prevent="close"
-              >アクセス</nuxt-link
-            >
-            <nuxt-link to="/contact" @click.native.prevent="close"
-              >お問い合わせ</nuxt-link
-            >
+            <a @click="routerPush('/')">トップページ</a>
+            <a @click="routerPush('/shop')">店舗販売</a>
+            <a @click="routerPush('/wholesale')">卸売り</a>
+            <a @click="routerPush('/access')">アクセス</a>
+            <a @click="routerPush('/contact')">お問い合わせ</a>
             <div class="social-icons">
               <img src="/img/common/icon/facebook.svg" alt="facebook" />
               <img
@@ -52,12 +42,18 @@
 </template>
 <script lang="ts">
 import Vue from 'vue'
+
 export default Vue.extend({
   props: { isActive: Boolean },
   methods: {
-    close() {
-      this.$nuxt.$emit('start-loading')
-      this.$emit('navigation-close')
+    routerPush(path: string) {
+      if (path === this.$nuxt.$route.path) {
+        this.$emit('navigation-close')
+      } else {
+        this.$nuxt.$emit('start-loading')
+        this.$emit('navigation-close')
+        this.$router.push(path)
+      }
     },
   },
 })
