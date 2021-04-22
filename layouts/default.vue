@@ -2,7 +2,7 @@
   <main>
     <header>
       <h1>
-        <nuxt-link to="/">
+        <a href="/">
           <transition name="header-img">
             <img
               v-show="headerVisible"
@@ -12,7 +12,7 @@
               alt="活魚なみき"
             />
           </transition>
-        </nuxt-link>
+        </a>
       </h1>
       <div class="burger-button-container">
         <span v-show="isActive">Close</span>
