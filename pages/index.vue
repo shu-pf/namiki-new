@@ -18,7 +18,7 @@
           srcset="/img/common/title.png 1x, /img/common/title@2x.png 2x"
         />
       </h1>
-      <a href="#" class="p-carousel__arrow c-arrow"><span></span>Scroll</a>
+      <div class="p-carousel__arrow c-arrow"><span></span>Scroll</div>
     </div>
     <div id="container">
       <section class="p-section">
