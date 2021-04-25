@@ -33,7 +33,8 @@
               class="c-heading__img--top-heading-img01 u-opacity--0"
               alt="店構え"
             />
-            <img src="/img/top/heading_img01@2x.png" style="display: none" />
+            <!-- ローディング画面対応 -->
+            <img src="/img/top/heading_img01.png" style="display: none" />
             <img
               v-inview:animate="'fadeIn'"
               class="c-heading__subtitle u-opacity--0"
@@ -69,6 +70,8 @@
               class="c-heading__img--top-heading-img02 u-opacity--0"
               alt="料理風景"
             />
+            <!-- ローディング画面対応 -->
+            <img src="/img/top/heading_img02.png" style="display: none" />
             <img
               v-inview:animate="'fadeIn'"
               class="c-heading__subtitle u-opacity--0"
@@ -127,6 +130,8 @@
               class="c-heading__img--top-heading-img03 u-opacity--0"
               alt="店構え"
             />
+            <!-- ローディング画面対応 -->
+            <img src="/img/top/heading_img03.png" style="display: none" />
             <img
               v-inview:animate="'fadeIn'"
               class="c-heading__subtitle u-opacity--0"
@@ -272,6 +277,11 @@ export default Vue.extend({
       this.imagesLoaded = true
       this.checkLoaded()
     })
+
+    const self = this
+    setTimeout(function () {
+      self.$nuxt.$emit('loaded')
+    }, 3000)
   },
   methods: {
     checkLoaded() {
