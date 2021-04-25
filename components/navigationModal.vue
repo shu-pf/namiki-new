@@ -20,12 +20,8 @@
               <a href="https://ja-jp.facebook.com/ikeuonamiki/">
                 <img src="/img/common/icon/facebook.svg" alt="facebook" />
               </a>
-              <a href="https://lin.ee/cvj6fau">
-                <img
-                  class="line"
-                  src="/img/common/icon/line.svg"
-                  alt="facebook"
-                />
+              <a class="line" href="https://lin.ee/cvj6fau">
+                <img src="/img/common/icon/line.svg" alt="facebook" />
               </a>
               <a href="https://www.instagram.com/ikeuonamiki_/">
                 <img src="/img/common/icon/instagram.svg" alt="facebook" />
