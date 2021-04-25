@@ -23,12 +23,7 @@
           <p class="p-section__paragraph">
             　神戸市元町商店街6丁目にある店内では、毎日その日に浜から仕入れた新鮮な魚を、食べやすいように調理をした上販売しております。<br />
             　また、当店自慢の大きな水槽からも、ぜひお買い求めください。<br />
-            　下処理は勿論、三枚おろし、二枚おろし、焼き物に煮付けに、如何様にもお料理させていただきます。<br />
-            　
-            <!-- 　活魚なみきでは、新鮮で旬なお魚をその日、その場で下処理・調理いたします。<br />
-            　『お刺身・焼く・煮る』など、お客様のご要望をお伝えください。<br />
-            　他にも、既に下処理・調理を施した商品もご提供 しております。<br />
-            　旬によって販売しているお魚が異なりますので、ぜひ一度魚秀へお立ち寄りくださいませ。 -->
+            　下処理は勿論、三枚おろし、二枚おろし、焼き物に煮付けに、如何様にもお料理させていただきます。
           </p>
         </div>
       </section>
@@ -57,38 +52,38 @@
           />
           <img
             class="c-photos__photo02"
-            src="/img/shop/item_photo01.png"
+            src="/img/shop/item_photo02.png"
             alt=""
             srcset="
-              /img/shop/item_photo01.png    1x,
-              /img/shop/item_photo01@2x.png 2x
+              /img/shop/item_photo02.png    1x,
+              /img/shop/item_photo02@2x.png 2x
             "
           />
           <img
             class="c-photos__photo03"
-            src="/img/shop/item_photo01.png"
+            src="/img/shop/item_photo03.png"
             alt=""
             srcset="
-              /img/shop/item_photo01.png    1x,
-              /img/shop/item_photo01@2x.png 2x
+              /img/shop/item_photo03.png    1x,
+              /img/shop/item_photo03@2x.png 2x
             "
           />
           <img
             class="c-photos__photo04"
-            src="/img/shop/item_photo01.png"
+            src="/img/shop/item_photo04.png"
             alt=""
             srcset="
-              /img/shop/item_photo01.png    1x,
-              /img/shop/item_photo01@2x.png 2x
+              /img/shop/item_photo04.png    1x,
+              /img/shop/item_photo04@2x.png 2x
             "
           />
           <img
             class="c-photos__photo05"
-            src="/img/shop/item_photo01.png"
+            src="/img/shop/item_photo05.png"
             alt=""
             srcset="
-              /img/shop/item_photo01.png    1x,
-              /img/shop/item_photo01@2x.png 2x
+              /img/shop/item_photo05.png    1x,
+              /img/shop/item_photo05@2x.png 2x
             "
           />
         </div>
