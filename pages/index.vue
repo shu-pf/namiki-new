@@ -183,7 +183,7 @@
             <h3 class="c-social-link__title">Facebook</h3>
           </a>
           <a
-            href="https://ja-jp.facebook.com/ikeuonamiki/"
+            href="https://lin.ee/cvj6fau"
             target="_blank"
             rel="noopener"
             class="p-sns__social-link c-social-link"
@@ -196,12 +196,12 @@
             <img
               class="c-social-link__logo"
               src="/img/common/icon/line--brown.svg"
-              alt="face book"
+              alt="line"
             />
             <h3 class="c-social-link__title">Line</h3>
           </a>
           <a
-            href="https://ja-jp.facebook.com/ikeuonamiki/"
+            href="https://www.instagram.com/ikeuonamiki_/"
             target="_blank"
             rel="noopener"
             class="p-sns__social-link c-social-link"
@@ -214,7 +214,7 @@
             <img
               class="c-social-link__logo"
               src="/img/common/icon/instagram--brown.svg"
-              alt="face book"
+              alt="instagram"
             />
             <h3 class="c-social-link__title">Instagram</h3>
           </a>
