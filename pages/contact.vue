@@ -17,7 +17,7 @@
           </div>
           <div class="tr">
             <div class="th">営業時間</div>
-            <div class="td">10:00 - 19:00</div>
+            <div class="td">10:00 - 19:30</div>
           </div>
           <div class="tr">
             <div class="th">定休日</div>

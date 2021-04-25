@@ -4,7 +4,7 @@
       <video
         id="p-carousel__video"
         class="p-carousel__img"
-        src="/img/top/mov/namiki-pc.mp4"
+        src="/img/top/mov/namiki-pc--min.mp4"
         autoplay
         loop
         muted
@@ -86,7 +86,8 @@
             v-inview:animate="'fadeInRight'"
             class="p-section__paragraph u-opacity--0"
           >
-            内容 ・毎日昼あみ、朝あみ行っている ・それが昼に店に並ぶ など<br />
+            　天然物の魚は、お高いイメージがあります。しかし、店主の「広い世代に採れたての本当に美味しい魚を食べてほしい」という思いから、毎日ご家庭で食べられるお求めやすい価格で提供させていただいております。<br /><br />
+            　どうぞご来店いただきご自身の目でご覧になって頂ければと思います。
           </p>
           <div
             v-inview:animate="'fadeInRight'"
@@ -100,13 +101,13 @@
               </div>
               <div class="c-cards__second-card">
                 <span class="c-cards__text"
-                  >毎日昼あみに行き <br />鮮度が高いものを販売</span
+                  >魚の臭みを消す<br />
+                  マイクロオゾン搭載の水槽</span
                 >
               </div>
               <div class="c-cards__third-card">
                 <span class="c-cards__text"
-                  >マイクロオゾン機能搭載の<br />
-                  大きなの水槽</span
+                  >その日に取れたものを<br />食卓へ</span
                 >
               </div>
             </div>
@@ -243,9 +244,10 @@
 <script lang="ts">
 import Vue from 'vue'
 // @ts-ignore
-// import imagesLoaded from 'imagesloaded'
+import imagesLoaded from 'imagesloaded'
 
 export default Vue.extend({
+  data: () => ({ imagesLoaded: false, videoLoaded: false }),
   created() {
     this.$nuxt.$emit('start-loading')
   },
@@ -259,16 +261,24 @@ export default Vue.extend({
         this.$nuxt.$emit('hide-header')
       }
     }
-    const vid = document.getElementById('p-carousel__video')
-    const self = this
-    if (vid)
-      vid.onloadeddata = function () {
-        self.$nuxt.$emit('loaded')
+    const video = document.getElementById('p-carousel__video')
+    if (video)
+      video.addEventListener('canplaythrough', () => {
+        this.videoLoaded = true
+        this.checkLoaded()
+      })
+    const top = document.getElementById('top')
+    imagesLoaded(top, () => {
+      this.imagesLoaded = true
+      this.checkLoaded()
+    })
+  },
+  methods: {
+    checkLoaded() {
+      if (this.videoLoaded && this.imagesLoaded) {
+        this.$nuxt.$emit('loaded')
       }
-    // const top = document.getElementById('top')
-    // imagesLoaded(top, () => {
-    //   this.$nuxt.$emit('loaded')
-    // })
+    },
   },
 })
 </script>
