@@ -17,13 +17,26 @@
             <a @click="routerPush('/access')">アクセス</a>
             <a @click="routerPush('/contact')">お問い合わせ</a>
             <div class="social-icons">
-              <a href="https://ja-jp.facebook.com/ikeuonamiki/">
+              <a
+                href="https://ja-jp.facebook.com/ikeuonamiki/"
+                target="_blank"
+                rel="noopener"
+              >
                 <img src="/img/common/icon/facebook.svg" alt="facebook" />
               </a>
-              <a class="line" href="https://lin.ee/cvj6fau">
+              <a
+                class="line"
+                href="https://lin.ee/cvj6fau"
+                target="_blank"
+                rel="noopener"
+              >
                 <img src="/img/common/icon/line.svg" alt="facebook" />
               </a>
-              <a href="https://www.instagram.com/ikeuonamiki_/">
+              <a
+                href="https://www.instagram.com/ikeuonamiki_/"
+                target="_blank"
+                rel="noopener"
+              >
                 <img src="/img/common/icon/instagram.svg" alt="facebook" />
               </a>
             </div>
