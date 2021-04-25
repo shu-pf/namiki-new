@@ -25,7 +25,7 @@
           </div>
           <p class="p-section__paragraph">
             　当店では、寿司屋、フレンチレストラン、割烹料理店、居酒屋、お好み焼き屋まで、幅広くご注文を承っております。<br />
-            　また、幼稚園・保育園や老人ホームの給食向けの切り身など対応しております。<br /><br />
+            　また、幼稚園・保育園や老人ホーム向けの給食向けの切り身など対応しております。<br /><br />
             　4代目の目利きで選んだ、鮮度にこだわっている魚はもちろん、ちりめんじゃこから干し物まで、幅広く揃えており、下処理から、泳がせたまま配達も可能です。<br />
             <br />
             　お魚の仕入れに関してはなんでもご相談ください。
@@ -65,6 +65,11 @@ export default Vue.extend({
     imagesLoaded(wholesale, () => {
       this.$nuxt.$emit('loaded')
     })
+
+    const self = this
+    setTimeout(function () {
+      self.$nuxt.$emit('loaded')
+    }, 3000)
   },
 })
 </script>

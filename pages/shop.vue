@@ -107,6 +107,11 @@ export default Vue.extend({
     imagesLoaded(shop, () => {
       this.$nuxt.$emit('loaded')
     })
+
+    const self = this
+    setTimeout(function () {
+      self.$nuxt.$emit('loaded')
+    }, 3000)
   },
 })
 </script>
