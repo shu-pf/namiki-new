@@ -1,11 +1,13 @@
 <template>
   <article id="top">
     <div class="p-carousel">
-      <img
+      <video
+        id="p-carousel__video"
         class="p-carousel__img"
-        srcset="/img/top/carousel-1.png 1x, /img/top/carousel-1@2x.png 2x"
-        src="/img/top/carousel-1.png"
-        alt="店構え"
+        src="/img/top/mov/namiki-pc.mp4"
+        autoplay
+        loop
+        muted
       />
       <div class="p-carousel__overlay"></div>
       <h1 class="u-m0">
@@ -241,7 +243,7 @@
 <script lang="ts">
 import Vue from 'vue'
 // @ts-ignore
-import imagesLoaded from 'imagesloaded'
+// import imagesLoaded from 'imagesloaded'
 
 export default Vue.extend({
   created() {
@@ -257,10 +259,16 @@ export default Vue.extend({
         this.$nuxt.$emit('hide-header')
       }
     }
-    const top = document.getElementById('top')
-    imagesLoaded(top, () => {
-      this.$nuxt.$emit('loaded')
-    })
+    const vid = document.getElementById('p-carousel__video')
+    const self = this
+    if (vid)
+      vid.onloadeddata = function () {
+        self.$nuxt.$emit('loaded')
+      }
+    // const top = document.getElementById('top')
+    // imagesLoaded(top, () => {
+    //   this.$nuxt.$emit('loaded')
+    // })
   },
 })
 </script>
