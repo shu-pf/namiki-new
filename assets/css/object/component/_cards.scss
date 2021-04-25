@@ -24,19 +24,19 @@
     @extend .c-cards__card;
 
     margin-right: 4px;
-    background: no-repeat center/cover url(/img/top/sub_img01@2x.png);
+    background: no-repeat center/cover url(/img/top/sub_img01.png);
   }
   &__second-card {
     @extend .c-cards__card;
 
     margin: 0 4px;
-    background: no-repeat center/cover url(/img/top/sub_img02@2x.png);
+    background: no-repeat center/cover url(/img/top/sub_img02.png);
   }
   &__third-card {
     @extend .c-cards__card;
 
     margin-left: 4px;
-    background: no-repeat center/cover url(/img/top/sub_img03@2x.png);
+    background: no-repeat center/cover url(/img/top/sub_img03.png);
   }
   &__text {
     opacity: 1 !important;
