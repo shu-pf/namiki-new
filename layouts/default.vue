@@ -7,7 +7,7 @@
             <img
               v-show="headerVisible"
               src="/img/common/logo.png"
-              srcset="/img/common/logo.png 1x, img/common/logo@2x.png 2x"
+              srcset="/img/common/logo.png 1x, /img/common/logo@2x.png 2x"
               height="40px"
               alt="活魚なみき"
             />
