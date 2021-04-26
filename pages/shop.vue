@@ -98,6 +98,14 @@ import Vue from 'vue'
 import imagesLoaded from 'imagesloaded'
 
 export default Vue.extend({
+  data: () => ({
+    title: '店舗販売',
+  }),
+  head() {
+    return {
+      title: this.title,
+    }
+  },
   created() {
     this.$nuxt.$emit('start-loading')
   },

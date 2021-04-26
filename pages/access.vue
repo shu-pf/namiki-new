@@ -46,6 +46,14 @@ import Vue from 'vue'
 import imagesLoaded from 'imagesloaded'
 
 export default Vue.extend({
+  data: () => ({
+    title: 'アクセス',
+  }),
+  head() {
+    return {
+      title: this.title,
+    }
+  },
   created() {
     this.$nuxt.$emit('start-loading')
   },

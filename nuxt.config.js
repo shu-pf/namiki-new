@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: '活魚なみき',
+    titleTemplate: '活魚なみき | %s',
     htmlAttrs: {
       lang: 'ja',
     },

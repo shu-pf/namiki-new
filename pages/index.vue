@@ -252,7 +252,17 @@ import Vue from 'vue'
 import imagesLoaded from 'imagesloaded'
 
 export default Vue.extend({
-  data: () => ({ imagesLoaded: false, videoLoaded: false }),
+  data: () => ({
+    title: '海産物が安くて新鮮！ 神戸市中央区の鮮魚店 | 活魚 なみき',
+    imagesLoaded: false,
+    videoLoaded: false,
+  }),
+  head() {
+    return {
+      title: this.title,
+      titleTemplate: '',
+    }
+  },
   created() {
     this.$nuxt.$emit('start-loading')
   },
