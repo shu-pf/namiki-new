@@ -19,6 +19,14 @@ $ yarn generate
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
 
+## firebase
+
+デプロイ方法
+
+```
+firebase deploy
+```
+
 ## 命名規則
 
 ### CSS
@@ -29,11 +37,17 @@ FLOCSS を使用
 
 ### 画像
 
+#### フォルダ分け
+
 - ページごとに画像フォルダを分ける
-- つなぎの記号は アンダースコア（ \_ ）を使う
+- 共通の画像は common フォルダに入れる
+
+#### ファイル名
+
+- ファイル名は「使用場所\_用途(連番)」
 - 同じ用途の画像が複数あった場合には、連番を付ける
 
-例
+#### 例
 
 サイドバーで使用しているバナー画像の場合 ⇒ side_bnr01.png
 

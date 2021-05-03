@@ -41,10 +41,194 @@
       </section>
       <section class="u-gutter">
         <h2 class="c-heading--border-bottom">卸先例</h2>
-        <p>
-          　寿司屋、フレンチレストラン、イタリアンレストラン、割烹料理店、居酒屋、お好み焼き屋、幼稚園・保育園、老人ホーム...
-          など
-        </p>
+        <p>　卸先をさせて頂いてます。飲食店様になります。</p>
+        <!-- p-wholesale-list -->
+        <div class="p-wholesale-list">
+          <!-- p-wholesale-list__tr -->
+          <div class="p-wholesale-list__tr">
+            <a
+              target="_blank"
+              rel="noopener"
+              href="https://www.shunsaishin.com/"
+              class="u-anchor p-wholesale-list__img-container"
+              ><img
+                src="/img/wholesale/wholesale-list_img01.jpg"
+                alt="旬菜 しん"
+            /></a>
+            <div class="p-wholesale-list__body">
+              <h3>
+                <a
+                  target="_blank"
+                  rel="noopener"
+                  href="https://www.shunsaishin.com/"
+                  class="u-anchor"
+                  >旬菜 しん 様</a
+                >
+              </h3>
+              <p>和食店</p>
+            </div>
+          </div>
+          <!-- p-wholesale-list__tr -->
+          <div class="p-wholesale-list__tr">
+            <a
+              target="_blank"
+              rel="noopener"
+              href="https://tabelog.com/hyogo/A2801/A280102/28032237/"
+              class="u-anchor p-wholesale-list__img-container"
+            >
+              <img
+                src="/img/wholesale/wholesale-list_img02.jpg"
+                alt="神戸中華 うえばやし"
+              />
+            </a>
+            <div class="p-wholesale-list__body">
+              <h3>
+                <a
+                  target="_blank"
+                  rel="noopener"
+                  href="https://tabelog.com/hyogo/A2801/A280102/28032237/"
+                  class="u-anchor"
+                  >神戸中華 うえばやし 様
+                </a>
+              </h3>
+              <p>中華料理</p>
+            </div>
+          </div>
+          <!-- p-wholesale-list__tr -->
+          <div class="p-wholesale-list__tr">
+            <a
+              target="_blank"
+              rel="noopener"
+              href="https://tabelog.com/hyogo/A2801/A280102/28032237/"
+              class="u-anchor p-wholesale-list__img-container"
+            >
+              <img
+                src="/img/wholesale/wholesale-list_img03.jpeg"
+                alt="モトマチ ティモ"
+              />
+            </a>
+            <div class="p-wholesale-list__body">
+              <h3>
+                <a
+                  target="_blank"
+                  rel="noopener"
+                  href="https://tabelog.com/hyogo/A2801/A280102/28045572/"
+                  class="u-anchor"
+                  >モトマチ ティモ 様
+                </a>
+              </h3>
+              <p>イタリアン</p>
+            </div>
+          </div>
+          <!-- p-wholesale-list__tr -->
+          <div class="p-wholesale-list__tr">
+            <a
+              target="_blank"
+              rel="noopener"
+              href="https://www.instagram.com/curry_cini/"
+              class="u-anchor p-wholesale-list__img-container"
+            >
+              <img
+                src="/img/wholesale/wholesale-list_img04.jpeg"
+                alt="チーニーカリー"
+              />
+            </a>
+            <div class="p-wholesale-list__body">
+              <h3>
+                <a
+                  target="_blank"
+                  rel="noopener"
+                  href="https://www.instagram.com/curry_cini/"
+                  class="u-anchor"
+                  >チーニーカリー 様
+                </a>
+              </h3>
+              <p>カレー</p>
+            </div>
+          </div>
+          <!-- p-wholesale-list__tr -->
+          <div class="p-wholesale-list__tr">
+            <a
+              target="_blank"
+              rel="noopener"
+              href="https://tabelog.com/hyogo/A2801/A280101/28000910/"
+              class="u-anchor p-wholesale-list__img-container"
+            >
+              <img
+                src="/img/wholesale/wholesale-list_img05.jpeg"
+                alt="宝寿司"
+              />
+            </a>
+            <div class="p-wholesale-list__body">
+              <h3>
+                <a
+                  target="_blank"
+                  rel="noopener"
+                  href="https://tabelog.com/hyogo/A2801/A280101/28000910/"
+                  class="u-anchor"
+                  >宝寿司 様</a
+                >
+              </h3>
+              <p>寿司 魚介料理</p>
+            </div>
+          </div>
+          <!-- p-wholesale-list__tr -->
+          <div class="p-wholesale-list__tr">
+            <a
+              target="_blank"
+              rel="noopener"
+              href="https://instagram.com/kobe_okonomiyaki_hikari?igshid=1t1e96pxm65vr"
+              class="u-anchor p-wholesale-list__img-container"
+            >
+              <img
+                src="/img/wholesale/wholesale-list_img06.jpeg"
+                alt="お好み焼き　ひかり"
+              />
+            </a>
+            <div class="p-wholesale-list__body">
+              <h3>
+                <a
+                  target="_blank"
+                  rel="noopener"
+                  href="https://instagram.com/kobe_okonomiyaki_hikari?igshid=1t1e96pxm65vr"
+                  class="u-anchor"
+                  >お好み焼き　ひかり 様</a
+                >
+              </h3>
+              <p>お好み焼き</p>
+            </div>
+          </div>
+          <!-- p-wholesale-list__tr -->
+          <div class="p-wholesale-list__tr">
+            <a
+              target="_blank"
+              rel="noopener"
+              href="https://tabelog.com/hyogo/A2801/A280101/28054388/"
+              class="u-anchor p-wholesale-list__img-container"
+            >
+              <img
+                class="p-wholesale-list__img"
+                src="/img/wholesale/wholesale-list_img07.jpeg"
+                alt="葵リベロ"
+              />
+            </a>
+            <div class="p-wholesale-list__body">
+              <h3>
+                <a
+                  target="_blank"
+                  rel="noopener"
+                  href="https://tabelog.com/hyogo/A2801/A280101/28054388/"
+                  class="u-anchor"
+                  >葵リベロ 様</a
+                >
+              </h3>
+              <p>イタリアン</p>
+            </div>
+          </div>
+        </div>
+        <!-- p-wholesale-list -->
+        <h3>その他</h3>
+        <p>　幼稚園・保育園、老人ホーム... など</p>
       </section>
     </div>
   </article>
