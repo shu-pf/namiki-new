@@ -8,6 +8,7 @@
         autoplay
         loop
         muted
+        playsinline
       />
       <div class="p-carousel__overlay"></div>
       <h1 class="u-m0">
