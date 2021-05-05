@@ -40,8 +40,8 @@
         </p>
       </section>
       <section class="u-gutter">
-        <h2 class="c-heading--border-bottom">卸先例</h2>
-        <p>　卸先をさせて頂いてます。飲食店様になります。</p>
+        <h2 class="c-heading--border-bottom">お取引先様</h2>
+        <p>　当店の地魚を使って頂いてる。おすすめの飲食店様です。</p>
         <!-- p-wholesale-list -->
         <div class="p-wholesale-list">
           <!-- p-wholesale-list__tr -->
@@ -225,6 +225,34 @@
               <p>イタリアン</p>
             </div>
           </div>
+          <!-- p-wholesale-list__tr -->
+          <div class="p-wholesale-list__tr">
+            <a
+              target="_blank"
+              rel="noopener"
+              href="https://www.instagram.com/trattoria.stella/"
+              class="u-anchor p-wholesale-list__img-container"
+            >
+              <img
+                class="p-wholesale-list__img"
+                src="/img/wholesale/wholesale-list_img08.jpeg"
+                alt="トラットリア ステラ"
+              />
+            </a>
+            <div class="p-wholesale-list__body">
+              <h3>
+                <a
+                  target="_blank"
+                  rel="noopener"
+                  href="https://www.instagram.com/trattoria.stella/"
+                  class="u-anchor"
+                  >トラットリア ステラ 様</a
+                >
+              </h3>
+              <p>イタリアン</p>
+            </div>
+          </div>
+          <!-- p-wholesale-list__tr -->
         </div>
         <!-- p-wholesale-list -->
         <h3>その他</h3>
