@@ -41,7 +41,7 @@
       </section>
       <section class="u-gutter">
         <h2 class="c-heading--border-bottom">お取引先様</h2>
-        <p>　当店の地魚を使って頂いてる。おすすめの飲食店様です。</p>
+        <p>　当店の地魚を使って頂いてる、おすすめの飲食店様です。</p>
         <!-- p-wholesale-list -->
         <div class="p-wholesale-list">
           <!-- p-wholesale-list__tr -->
