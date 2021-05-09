@@ -49,6 +49,30 @@
             <a
               target="_blank"
               rel="noopener"
+              href="https://tabelog.com/hyogo/A2801/A280101/28042860/"
+              class="u-anchor p-wholesale-list__img-container"
+              ><img
+                src="/img/wholesale/wholesale-list_img00.jpeg"
+                alt="鯛之鯛 神戸三宮店"
+            /></a>
+            <div class="p-wholesale-list__body">
+              <h3>
+                <a
+                  target="_blank"
+                  rel="noopener"
+                  href="https://tabelog.com/hyogo/A2801/A280101/28042860/"
+                  class="u-anchor"
+                  >鯛之鯛 神戸三宮店 様</a
+                >
+              </h3>
+              <p>居酒屋</p>
+            </div>
+          </div>
+          <!-- p-wholesale-list__tr -->
+          <div class="p-wholesale-list__tr">
+            <a
+              target="_blank"
+              rel="noopener"
               href="https://www.shunsaishin.com/"
               class="u-anchor p-wholesale-list__img-container"
               ><img
@@ -252,6 +276,87 @@
               <p>イタリアン</p>
             </div>
           </div>
+          <!-- p-wholesale-list__tr -->
+          <div class="p-wholesale-list__tr">
+            <a
+              target="_blank"
+              rel="noopener"
+              href="https://www.instagram.com/mi_kou_enne/"
+              class="u-anchor p-wholesale-list__img-container"
+            >
+              <img
+                class="p-wholesale-list__img"
+                src="/img/wholesale/wholesale-list_img09.jpeg"
+                alt="実香園"
+              />
+            </a>
+            <div class="p-wholesale-list__body">
+              <h3>
+                <a
+                  target="_blank"
+                  rel="noopener"
+                  href="https://www.instagram.com/mi_kou_enne/"
+                  class="u-anchor"
+                  >実香園 様</a
+                >
+              </h3>
+              <p>中華料理店</p>
+            </div>
+          </div>
+          <!-- p-wholesale-list__tr -->
+          <div class="p-wholesale-list__tr">
+            <a
+              target="_blank"
+              rel="noopener"
+              href="https://www.instagram.com/moto6_kitchen/"
+              class="u-anchor p-wholesale-list__img-container"
+            >
+              <img
+                class="p-wholesale-list__img"
+                src="/img/wholesale/wholesale-list_img10.jpeg"
+                alt="MOTO6"
+              />
+            </a>
+            <div class="p-wholesale-list__body">
+              <h3>
+                <a
+                  target="_blank"
+                  rel="noopener"
+                  href="https://www.instagram.com/moto6_kitchen/"
+                  class="u-anchor"
+                  >MOTO6 様</a
+                >
+              </h3>
+              <p>スープ専門店</p>
+            </div>
+          </div>
+          <!-- p-wholesale-list__tr -->
+          <!-- <div class="p-wholesale-list__tr">
+            <a
+              target="_blank"
+              rel="noopener"
+              href="リンク"
+              class="u-anchor p-wholesale-list__img-container"
+            >
+              <img
+                class="p-wholesale-list__img"
+                src="リンク"
+                alt="店名"
+              />
+            </a>
+            <div class="p-wholesale-list__body">
+              <h3>
+                <a
+                  target="_blank"
+                  rel="noopener"
+                  href="/img/wholesale/wholesale-list_imgXX.jpeg"
+                  class="u-anchor"
+                  >店名 様</a
+                >
+              </h3>
+              <p>ジャンル</p>
+            </div>
+          </div> -->
           <!-- p-wholesale-list__tr -->
         </div>
         <!-- p-wholesale-list -->
