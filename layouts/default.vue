@@ -15,6 +15,7 @@
         </a>
       </h1>
       <div class="burger-button-container">
+        <span v-show="!isActive">Menu</span>
         <span v-show="isActive">Close</span>
         <burger-button
           :active="isActive"
