@@ -14,7 +14,7 @@
           </transition>
         </a>
       </h1>
-      <div class="burger-button-container">
+      <div class="burger-button-container" @click="isActive = !isActive">
         <span v-show="!isActive">Menu</span>
         <span v-show="isActive">Close</span>
         <burger-button
@@ -22,7 +22,6 @@
           :bar-color="'#70644f'"
           :bar-height="2"
           :bar-width="25"
-          @click="isActive = !isActive"
         />
       </div>
       <navigationModal

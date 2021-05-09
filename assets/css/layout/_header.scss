@@ -18,9 +18,13 @@ header {
     }
   }
   .burger-button-container {
+    border: var(--color-primary) solid 1px;
+    padding-left: 8px;
+    padding-right: 8px;
     z-index: 4;
     display: flex;
     align-items: center;
+    cursor: pointer;
     > span {
       display: block;
       margin-right: 16px;
