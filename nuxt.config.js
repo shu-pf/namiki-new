@@ -73,6 +73,23 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    [
+      '@nuxtjs/firebase',
+      {
+        config: {
+          apiKey: 'AIzaSyAXyPDOuWfg2pp_V_Lde7dzVKQJ6DBN_gk',
+          authDomain: 'namiki-4f668.firebaseapp.com',
+          projectId: 'namiki-4f668',
+          storageBucket: 'namiki-4f668.appspot.com',
+          messagingSenderId: '576816868367',
+          appId: '1:576816868367:web:e007561e72cf4a7190077a',
+          measurementId: 'G-VHREJ7N6TT',
+        },
+        services: {
+          analytics: true,
+        },
+      },
+    ],
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
