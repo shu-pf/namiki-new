@@ -52,7 +52,7 @@
               href="https://tabelog.com/hyogo/A2801/A280101/28042860/"
               class="u-anchor p-wholesale-list__img-container"
               ><img
-                src="/img/wholesale/wholesale-list_img00.jpeg"
+                src="/img/wholesale/wholesale-list_img00-00.jpeg"
                 alt="鯛之鯛 神戸三宮店"
             /></a>
             <div class="p-wholesale-list__body">
@@ -63,6 +63,78 @@
                   href="https://tabelog.com/hyogo/A2801/A280101/28042860/"
                   class="u-anchor"
                   >鯛之鯛 神戸三宮店 様</a
+                >
+              </h3>
+              <p>居酒屋</p>
+            </div>
+          </div>
+          <!-- p-wholesale-list__tr -->
+          <div class="p-wholesale-list__tr">
+            <a
+              target="_blank"
+              rel="noopener"
+              href="https://tabelog.com/osaka/A2701/A270202/27101186/"
+              class="u-anchor p-wholesale-list__img-container"
+              ><img
+                src="/img/wholesale/wholesale-list_img00-01.jpg"
+                alt="鯛之鯛 難波店"
+            /></a>
+            <div class="p-wholesale-list__body">
+              <h3>
+                <a
+                  target="_blank"
+                  rel="noopener"
+                  href="https://tabelog.com/osaka/A2701/A270202/27101186/"
+                  class="u-anchor"
+                  >鯛之鯛 難波店 様</a
+                >
+              </h3>
+              <p>居酒屋</p>
+            </div>
+          </div>
+          <!-- p-wholesale-list__tr -->
+          <div class="p-wholesale-list__tr">
+            <a
+              target="_blank"
+              rel="noopener"
+              href="https://tabelog.com/osaka/A2701/A270101/27091917/"
+              class="u-anchor p-wholesale-list__img-container"
+              ><img
+                src="/img/wholesale/wholesale-list_img00-02.jpg"
+                alt="鯛之鯛 梅田店"
+            /></a>
+            <div class="p-wholesale-list__body">
+              <h3>
+                <a
+                  target="_blank"
+                  rel="noopener"
+                  href="https://tabelog.com/osaka/A2701/A270101/27091917/"
+                  class="u-anchor"
+                  >鯛之鯛 梅田店 様</a
+                >
+              </h3>
+              <p>居酒屋</p>
+            </div>
+          </div>
+          <!-- p-wholesale-list__tr -->
+          <div class="p-wholesale-list__tr">
+            <a
+              target="_blank"
+              rel="noopener"
+              href="https://tabelog.com/kyoto/A2601/A260201/26034388/"
+              class="u-anchor p-wholesale-list__img-container"
+              ><img
+                src="/img/wholesale/wholesale-list_img00-03.jpg"
+                alt="鯛之鯛 烏丸店"
+            /></a>
+            <div class="p-wholesale-list__body">
+              <h3>
+                <a
+                  target="_blank"
+                  rel="noopener"
+                  href="https://tabelog.com/kyoto/A2601/A260201/26034388/"
+                  class="u-anchor"
+                  >鯛之鯛 烏丸店 様</a
                 >
               </h3>
               <p>居酒屋</p>
@@ -308,12 +380,39 @@
             <a
               target="_blank"
               rel="noopener"
+              href="https://www.kobe-nanten.net/"
+              class="u-anchor p-wholesale-list__img-container"
+            >
+              <img
+                class="p-wholesale-list__img"
+                src="/img/wholesale/wholesale-list_img10.jpg"
+                alt="MOTO6"
+              />
+            </a>
+            <div class="p-wholesale-list__body">
+              <h3>
+                <a
+                  target="_blank"
+                  rel="noopener"
+                  href="https://www.kobe-nanten.net/"
+                  class="u-anchor"
+                  >なん天 様</a
+                >
+              </h3>
+              <p>地魚・地野菜・地酒</p>
+            </div>
+          </div>
+          <!-- p-wholesale-list__tr -->
+          <div class="p-wholesale-list__tr">
+            <a
+              target="_blank"
+              rel="noopener"
               href="https://www.instagram.com/moto6_kitchen/"
               class="u-anchor p-wholesale-list__img-container"
             >
               <img
                 class="p-wholesale-list__img"
-                src="/img/wholesale/wholesale-list_img10.jpeg"
+                src="/img/wholesale/wholesale-list_img11.jpeg"
                 alt="MOTO6"
               />
             </a>
