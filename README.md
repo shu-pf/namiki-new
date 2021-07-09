@@ -1,5 +1,10 @@
 # namiki-new
 
+## デプロイ場所
+
+https://namiki.shop/
+
+
 ## Build Setup
 
 ```bash
