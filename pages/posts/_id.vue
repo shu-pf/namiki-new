@@ -23,12 +23,18 @@ const contentfulClient = createClient()
 
 const renderOptions = {
   renderNode: {
-    [BLOCKS.EMBEDDED_ASSET]: ({
-      data: {
-        target: { fields },
-      },
-    }) =>
-      `<img class="p-post__img" src="${fields.file.url}" alt="${fields.description}"/>`,
+    paragraph: (node, next) =>
+      `<p>${next(node.content).replace(/\n/g, `</br>`)}</p>`,
+    [BLOCKS.EMBEDDED_ASSET]: (node) => {
+      if (node.data.target.fields.file.contentType === 'image/jpeg') {
+        return `<img class="p-post__img" src="${node.data.target.fields.file.url}" alt="${node.data.target.fields.description}"/>`
+      } else if (
+        node.data.target.fields.file.contentType === 'application/pdf'
+      ) {
+        console.log(node)
+        return `<a href="${node.data.target.fields.file.url}" download="${node.data.target.fields.title}" target="_blank"><div class="p-post__file">${node.data.target.fields.title}</div></a>`
+      }
+    },
   },
 }
 
