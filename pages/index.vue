@@ -22,6 +22,13 @@
       <div class="p-carousel__arrow c-arrow"><span></span>Scroll</div>
     </div>
     <div id="container">
+      <section class="p-news">
+        <h2 class="p-news__title">お知らせ</h2>
+        <ul class="p-news__list">
+          <li>年末年始の営業について</li>
+          <li>営業時間の変更について</li>
+        </ul>
+      </section>
       <section class="p-section">
         <div>
           <div class="c-heading">

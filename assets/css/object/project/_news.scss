@@ -1,0 +1,21 @@
+// 使用箇所: トップページ
+// 目的: 新着記事の表示
+.p-news {
+  margin: 16px 0;
+  padding: 0.5em 1em;
+  border: solid 3px var(--color-primary);
+  border-radius: 10px;
+  @extend .u-gutter;
+  &__title {
+    margin: 16px 0;
+  }
+  &__list {
+    padding-left: 24px;
+    li {
+      margin-top: 8px;
+    }
+    li:first-child {
+      margin-top: 0;
+    }
+  }
+}
