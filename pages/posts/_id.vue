@@ -1,10 +1,12 @@
 <template>
-  <article id="contact">
+  <article id="post">
     <div id="container">
-      <section class="p-section--simple u-gutter">
-        <NuxtLink to="/">トップに戻る</NuxtLink>
-        <h1 class="c-heading--border-bottom">{{ post.fields.title }}</h1>
-        <div class="article__content" v-html="renderedHtml" />
+      <section class="p-section--simple">
+        <div class="p-post">
+          <NuxtLink to="/">トップに戻る</NuxtLink>
+          <h2 class="p-post__title">{{ post.fields.title }}</h2>
+          <div v-html="renderedHtml" />
+        </div>
       </section>
     </div>
   </article>
@@ -39,8 +41,8 @@ export default Vue.extend({
   },
   mounted() {
     this.$nuxt.$emit('show-header')
-    const contact = document.getElementById('contact')
-    imagesLoaded(contact, () => {
+    const post = document.getElementById('post')
+    imagesLoaded(post, () => {
       this.$nuxt.$emit('loaded')
     })
   },

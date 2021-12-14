@@ -1,0 +1,9 @@
+.p-post {
+  margin-bottom: 16px;
+  @extend .u-gutter;
+  &__title {
+    font-size: 28px;
+    margin-bottom: 8px;
+    @extend .c-heading--border-bottom;
+  }
+}
