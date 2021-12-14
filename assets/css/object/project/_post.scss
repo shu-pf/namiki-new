@@ -6,4 +6,7 @@
     margin-bottom: 8px;
     @extend .c-heading--border-bottom;
   }
+  &__img {
+    max-width: 100%;
+  }
 }

@@ -17,14 +17,28 @@ import Vue from 'vue'
 // @ts-ignore
 import imagesLoaded from 'imagesloaded'
 import { documentToHtmlString } from '@contentful/rich-text-html-renderer'
+import { BLOCKS } from '@contentful/rich-text-types'
 import { createClient } from '~/plugins/contentful.js'
 const contentfulClient = createClient()
+
+const renderOptions = {
+  renderNode: {
+    [BLOCKS.EMBEDDED_ASSET]: ({
+      data: {
+        target: { fields },
+      },
+    }) =>
+      `<img class="p-post__img" src="${fields.file.url}" alt="${fields.description}"/>`,
+  },
+}
+
+// const renderOptions = {}
 
 export default Vue.extend({
   async asyncData({ route }) {
     const post = await contentfulClient.getEntry(route.params.id)
     const rawRichTextField = post.fields.body
-    const renderedHtml = documentToHtmlString(rawRichTextField)
+    const renderedHtml = documentToHtmlString(rawRichTextField, renderOptions)
 
     return {
       post,
