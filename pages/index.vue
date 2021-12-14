@@ -25,8 +25,9 @@
       <section class="p-news">
         <h2 class="p-news__title">お知らせ</h2>
         <ul class="p-news__list">
-          <li>年末年始の営業について</li>
-          <li>営業時間の変更について</li>
+          <li v-for="post in posts" :key="post.fields.title">
+            {{ post.fields.title }}
+          </li>
         </ul>
       </section>
       <section class="p-section">
@@ -248,7 +249,7 @@
           width="100%"
           height="300"
           style="border: 0"
-          allowfullscreen=""
+          allowfullscreen="true"
           loading="lazy"
         ></iframe>
       </section>
@@ -259,8 +260,16 @@
 import Vue from 'vue'
 // @ts-ignore
 import imagesLoaded from 'imagesloaded'
+import { createClient } from '~/plugins/contentful.js'
+const contentfulClient = createClient()
 
 export default Vue.extend({
+  async asyncData() {
+    const posts = await contentfulClient.getEntries({ order: '-sys.createdAt' })
+    return {
+      posts: posts.items,
+    }
+  },
   data: () => ({
     title: '海産物が安くて新鮮！ 神戸市中央区の鮮魚店 | 活魚 なみき',
     imagesLoaded: false,
@@ -280,8 +289,10 @@ export default Vue.extend({
     // ヘッダーアイコンをカルーセル上で表示させない
     window.onscroll = function () {
       if (window.pageYOffset > window.innerHeight) {
+        // @ts-ignore
         this.$nuxt.$emit('show-header')
       } else {
+        // @ts-ignore
         this.$nuxt.$emit('hide-header')
       }
     }

@@ -1,3 +1,5 @@
+import contentfulConfig from './.contentful.json'
+
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
@@ -99,5 +101,11 @@ export default {
 
   router: {
     middleware: ['onscrollInit'],
+  },
+
+  env: {
+    CTF_SPACE_ID: contentfulConfig.CTF_SPACE_ID,
+    CTF_CDA_ACCESS_TOKEN: contentfulConfig.CTF_CDA_ACCESS_TOKEN,
+    CTF_BLOG_POST_TYPE_ID: contentfulConfig.CTF_BLOG_POST_TYPE_ID,
   },
 }
