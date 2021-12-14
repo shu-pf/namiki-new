@@ -1,0 +1,18 @@
+.p-post {
+  margin-bottom: 16px;
+  @extend .u-gutter;
+  &__title {
+    font-size: 28px;
+    margin-bottom: 8px;
+    @extend .c-heading--border-bottom;
+  }
+  &__img {
+    max-width: 100%;
+  }
+  &__file {
+    display: inline-block;
+    margin: 4px 4px 4px 0;
+    padding: 8px;
+    border: solid 2px var(--color-primary);
+  }
+}
