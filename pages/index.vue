@@ -26,7 +26,9 @@
         <h2 class="p-news__title">お知らせ</h2>
         <ul class="p-news__list">
           <li v-for="post in posts" :key="post.fields.title">
-            {{ post.fields.title }}
+            <NuxtLink :to="{ path: `posts/${post.sys.id}` }">{{
+              post.fields.title
+            }}</NuxtLink>
           </li>
         </ul>
       </section>
