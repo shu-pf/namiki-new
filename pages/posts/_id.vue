@@ -5,6 +5,7 @@
         <div class="p-post">
           <NuxtLink to="/">トップに戻る</NuxtLink>
           <h2 class="p-post__title">{{ post.fields.title }}</h2>
+          <!-- eslint-disable-next-line vue/no-v-html -->
           <div v-html="renderedHtml" />
         </div>
       </section>
