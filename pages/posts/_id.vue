@@ -13,9 +13,8 @@
   </article>
 </template>
 
-<script lang="ts">
+<script>
 import Vue from 'vue'
-// @ts-ignore
 import imagesLoaded from 'imagesloaded'
 import { documentToHtmlString } from '@contentful/rich-text-html-renderer'
 import { BLOCKS } from '@contentful/rich-text-types'
@@ -24,19 +23,9 @@ const contentfulClient = createClient()
 
 const renderOptions = {
   renderNode: {
-    paragraph: (node: { content: any }, next: (arg0: any) => string) =>
+    paragraph: (node, next) =>
       `<p>${next(node.content).replace(/\n/g, `</br>`)}</p>`,
-    [BLOCKS.EMBEDDED_ASSET]: (node: {
-      data: {
-        target: {
-          fields: {
-            file: { contentType: string; url: any }
-            description: any
-            title: any
-          }
-        }
-      }
-    }) => {
+    [BLOCKS.EMBEDDED_ASSET]: (node) => {
       if (node.data.target.fields.file.contentType === 'image/jpeg') {
         return `<img class="p-post__img" src="${node.data.target.fields.file.url}" alt="${node.data.target.fields.description}"/>`
       } else if (
@@ -53,9 +42,7 @@ const renderOptions = {
 export default Vue.extend({
   async asyncData({ route }) {
     const post = await contentfulClient.getEntry(route.params.id)
-    // @ts-ignore
     const rawRichTextField = post.fields.body
-    // @ts-ignore
     const renderedHtml = documentToHtmlString(rawRichTextField, renderOptions)
 
     return {
@@ -65,7 +52,6 @@ export default Vue.extend({
   },
   head() {
     return {
-      // @ts-ignore
       title: this.post.fields.title,
     }
   },

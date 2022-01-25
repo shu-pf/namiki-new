@@ -258,9 +258,8 @@
     </div>
   </article>
 </template>
-<script lang="ts">
+<script>
 import Vue from 'vue'
-// @ts-ignore
 import imagesLoaded from 'imagesloaded'
 import { createClient } from '~/plugins/contentful.js'
 const contentfulClient = createClient()
@@ -291,10 +290,8 @@ export default Vue.extend({
     // ヘッダーアイコンをカルーセル上で表示させない
     window.onscroll = function () {
       if (window.pageYOffset > window.innerHeight) {
-        // @ts-ignore
         this.$nuxt.$emit('show-header')
       } else {
-        // @ts-ignore
         this.$nuxt.$emit('hide-header')
       }
     }

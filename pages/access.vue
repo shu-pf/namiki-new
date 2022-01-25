@@ -40,9 +40,8 @@
   </article>
 </template>
 
-<script lang="ts">
+<script>
 import Vue from 'vue'
-// @ts-ignore
 import imagesLoaded from 'imagesloaded'
 
 export default Vue.extend({

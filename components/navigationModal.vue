@@ -55,13 +55,13 @@
     </div>
   </transition>
 </template>
-<script lang="ts">
+<script>
 import Vue from 'vue'
 
 export default Vue.extend({
   props: { isActive: Boolean },
   methods: {
-    routerPush(path: string) {
+    routerPush(path) {
       if (path === this.$nuxt.$route.path) {
         this.$emit('navigation-close')
       } else {
