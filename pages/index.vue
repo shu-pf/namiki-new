@@ -22,16 +22,7 @@
       <div class="p-carousel__arrow c-arrow"><span></span>Scroll</div>
     </div>
     <div id="container">
-      <section class="p-news">
-        <h2 class="p-news__title">お知らせ</h2>
-        <ul class="p-news__list">
-          <li v-for="post in posts" :key="post.fields.title">
-            <NuxtLink :to="{ path: `posts/${post.sys.id}` }">{{
-              post.fields.title
-            }}</NuxtLink>
-          </li>
-        </ul>
-      </section>
+      <News :posts="posts" />
       <section class="p-section">
         <div>
           <div class="c-heading">
@@ -262,12 +253,19 @@
 import Vue from 'vue'
 // @ts-ignore
 import imagesLoaded from 'imagesloaded'
+import News from '@/components/index/News.vue'
 import { createClient } from '~/plugins/contentful.js'
 const contentfulClient = createClient()
 
 export default Vue.extend({
+  components: {
+    News,
+  },
   async asyncData() {
-    const posts = await contentfulClient.getEntries({ order: '-sys.createdAt' })
+    const posts = await contentfulClient.getEntries({
+      limit: 1,
+      order: '-sys.createdAt',
+    })
     return {
       posts: posts.items,
     }
