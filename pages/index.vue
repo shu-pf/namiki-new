@@ -300,11 +300,13 @@ export default Vue.extend({
     if (video)
       video.addEventListener('canplaythrough', () => {
         this.videoLoaded = true
+        // @ts-ignore
         this.checkLoaded()
       })
     const top = document.getElementById('top')
     imagesLoaded(top, () => {
       this.imagesLoaded = true
+      // @ts-ignore
       this.checkLoaded()
     })
 
