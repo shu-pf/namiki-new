@@ -262,7 +262,10 @@ export default Vue.extend({
     News,
   },
   async asyncData() {
-    const posts = await contentfulClient.getEntries({ order: '-sys.createdAt' })
+    const posts = await contentfulClient.getEntries({
+      limit: 1,
+      order: '-sys.createdAt',
+    })
     return {
       posts: posts.items,
     }
