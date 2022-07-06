@@ -263,7 +263,7 @@ export default Vue.extend({
   },
   async asyncData() {
     const posts = await contentfulClient.getEntries({
-      limit: 1,
+      limit: 2,
       order: '-sys.createdAt',
     })
     return {
