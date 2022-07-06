@@ -51,9 +51,8 @@
     </footer>
   </main>
 </template>
-<script lang="ts">
+<script>
 import Vue from 'vue'
-// @ts-ignore
 import BurgerButton from 'vue-burger-button'
 import navigationModal from '@/components/navigationModal.vue'
 
